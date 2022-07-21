@@ -2,8 +2,9 @@
 
 1 . 김O민
 
-* 진도율 : 35%
+* 진도율 : 40%
 * 맡은 부분 : main page nav, project, service and footer
+* 07-21 한 부분: nav 부분 배열 재배치, 서브 nav도 같이 수정, 서비스 파트 스타일 시트 작업 
 
 2 . 권O찬
 
