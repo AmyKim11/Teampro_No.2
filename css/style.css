@@ -153,20 +153,64 @@ header{
 .hide-nav-texts{
    display: none;
 }
-/* ------------header-케러셀 부분------------- */
-.container{
-   position: absolute;
-   top: 0px;
-   left: 0px;
-   width: 100%;
+/* -----------------slider 부분-------------------- */
+.slider{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
 }
-.pic-1{
-   /* max-width: 100%; */
-   background: url('../img/carousel-max.png') no-repeat;
-   background-size: cover;
+#slider_item{
+   display: block;
+   object-fit: cover;
+}
+.slider_img{
+   width: 100%;
    height: 900px;
-   overflow: hidden;
+   filter: blur(0) brightness(60%) contrast(150%)
+}
+.slider_para{
+   position: absolute;
+   top: 462px;
+   left: 240px;
+   width: 630px;
+   height: 116px;
+}
 
+.para_first{
+   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
+   letter-spacing: var(--unnamed-character-spacing-0);
+   text-align: left;
+   font: normal normal bold 40px/58px Noto Sans KR;
+   letter-spacing: 0px;
+   color: #FFFFFF;
+   opacity: 1;
+}
+
+.para_second{
+   top: 628px;
+   left: 240px;
+   width: 620px;
+   height: 52px;
+   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 18px/26px var(--unnamed-font-family-noto-sans-kr);
+   letter-spacing: var(--unnamed-character-spacing-0);
+   text-align: left;
+   font: normal normal bold 18px/26px Noto Sans KR;
+   letter-spacing: 0px;
+   color: #FFFFFF;
+   opacity: 1;
+}
+
+.slider_button{
+   position: absolute;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   top: 780px;
+   left: 240px;
+   width: 178px;
+   height: 40px;
+   opacity: 0.8;
 }
 
 /* ---------프로젝트 부분----------------------- */
