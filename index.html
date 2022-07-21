@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <link rel="stylesheet" href="./css/style.css">
    <link rel="stylesheet" href="./css/index_style.css">
    <link rel="stylesheet" href="./css/resoft_page.css">
@@ -49,30 +49,44 @@
 
    <!-- slider -->
    <div class="slider">
-      <div id="slide_item" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" data-bs-wrap="true" data-bs-pause="false">
-         <div class="carousel-inner">
+      <!-- data-pause="false" 부분은 hover해도 이미지가 계속 슬라이드 하게 하는 부분으로 나중에 제거 예정 -->
+      <div id="slider_item" class="carousel slide" data-ride="carousel" data-pause="false">
+         <div class="carousel_inner">
            <div class="carousel-item active">
-             <img src="./img/slider/slider_1.png" class="d-block w-100" alt="">
+             <img class="slider_img" src="./img//slider//slider_1.png" alt="First slide">
            </div>
            <div class="carousel-item">
-             <img src="./img/slider/slider_2.png" class="d-block w-100" alt="">
+             <img class="slider_img" src="./img//slider//slider_2.png" alt="Second slide">
            </div>
            <div class="carousel-item">
-             <img src="./img/slider/slider_3.png" class="d-block w-100" alt="">
+             <img class="slider_img" src="./img//slider//slider_3.png" alt="Third slide">
            </div>
          </div>
-         <button class="slier_controller" type="button" data-bs-target="#slide_item" data-bs-slide="prev" >
-           <img src="./img/slider/preview_button.svg" alt="">
-         </button>
-         <button class="slier_controller contrl_pause" type="button" data-bs-target="slide_item">
-            <img src="./img/slider/play.svg" alt="">
-         </button>
-         <button class="slier_controller" type="button" data-bs-target="#slide_item" data-bs-slide="next">
+      </div>
+
+      <div class="slider_para">
+         <h1 class="para_first">Evolution<br>With New Software</h1>
+         <br>
+         <p class="para_second">
+            <span>Mobile APP(Android/iOS) Development, AI Bigdata Analysis, MetaVerse, Responsive WEBsite, Brand Design Launch, ICT Consulting</span>
+         </p>
+      </div>
+
+      <div class="slider_button">
+         <a class="preview_button control_button_style" href="#slider_item" role="button" data-slide="prev">
+            <img src="./img/slider/preview_button.svg" alt="">
+         </a>
+         <a class="pauseplay_button control_button_style" href="#slider_item" role="button">
+            <img class="pauseplay_img" src="./img/slider/pause.svg" alt="">
+         </a>
+         <a class="next_button control_button_style" href="#slider_item" role="button" data-slide="next">
             <img src="./img/slider/next_button.svg" alt="">
-         </button>
-       </div>
+         </a>
+      </div>
+       
    </div>
 
+   <!-- project -->
    <div class="project-wrap">
       <div class="project-con-wrap">
          <div class="pro-con-right">
@@ -106,12 +120,11 @@
                <p class="pro-text-con">첨단 기술 서비스 제공을 위해 사용자 입장에서<br/>
                    생각하고 항상 새로운 도전을 시도합니다.</p>
             </div>
-            <div class="motion-pic-1">
-               <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_3rqwsqnj.json"  background="transparent"  speed="1"  style="width: 680px; height: 680px;"  loop  autoplay></lottie-player>
-            </div>
         </div>
       </div>
    </div>
+
+   <!-- service -->
    <div class="service-wrap">
       <div class="service-con-wrap">
          <div class="ser-con-left">
@@ -185,11 +198,10 @@
                </figure>
             </div>
          </div>
-      
       </div>
    </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="./js/slider.js"></script>
 <script src="./js/index.js"></script>
 </html>
