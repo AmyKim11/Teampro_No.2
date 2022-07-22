@@ -213,6 +213,64 @@ header{
    opacity: 0.8;
 }
 
+.pauseplay_button{
+   width: 50px;
+}
+
+/* -----------------resoft news 부분-------------------- */
+.border_check{
+   border: 10px solid #000;
+   z-index: 9999999999;
+}
+
+.news_wrap{
+   box-sizing: border-box;
+   position: absolute;
+   top: 1000px;
+   left: 240px;
+   width: 1440px;
+   height: 450px;
+}
+
+.news_title{
+   top: 1000px;
+   left: 240px;
+   width: 386px;
+   height: 84px;
+}
+
+.news_title h1{
+   top: 1000px;
+   left: 240px;
+   width: 386px;
+   height: 58px;
+   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
+   letter-spacing: var(--unnamed-character-spacing-0);
+   text-align: left;
+   font: normal normal bold 40px/58px Noto Sans KR;
+   letter-spacing: 0px;
+   color: #1E1E1E;
+   opacity: 1;
+}
+
+.news_title p{
+   top: 1058px;
+   left: 240px;
+   width: 123px;
+   height: 26px;
+   font: var(--unnamed-font-style-normal) normal medium 18px/26px var(--unnamed-font-family-noto-sans-kr);
+   letter-spacing: var(--unnamed-character-spacing-0);
+   text-align: left;
+   font: normal normal medium 18px/26px Noto Sans KR;
+   letter-spacing: 0px;
+   color: #C8C8C8;
+   opacity: 1;
+}
+
+.news_item li{
+   display: inline-block;
+}
+
 /* ---------프로젝트 부분----------------------- */
 
 .project-wrap{
