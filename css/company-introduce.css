@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 회사소개 그림부분 */
+.intro{
+    /* Layout Properties */
+    top: 80px;
+    left: 0px;
+    width: 1920px;
+    height: 300px;
+    /* UI Properties */
+    background: #1E1E1E 0% 0% no-repeat padding-box;
+    opacity: 0.6;
+    position: relative;
+}
+.intro-text{
+    top: 130px;
+    left: 865px;
+    width: 148px;
+    height: 58px;
+    position: absolute;
+    text-align: center;
+    font: 40px bold;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+/* REsoft 소개 부분 */
+.about-us{
+    width: 1920px;
+    margin-top: 80px;
+    background-color: white;
+}
+.title{
+    padding-top: 100px;
+    margin-left:240px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.title p:last-child{
+    font-size: 18px;
+    color: #C8C8C8;
+    text-align: left;
+}
+.about-us .about-box{
+    margin: 50px 240px 0 240px;
+    padding-bottom: 100px;
+}
+.about-box hr{
+    margin:20px 0 20px 0;
+    border : 0px;
+    border-top: 1px solid #DBDBDB;
+}
+.about-box-text p{
+    display: inline-block;
+}
+.about-box-text p:first-child{
+    width: 200px;
+    margin-left: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.about-box-text p:last-child{
+    font-size: 20px;
+    color: #959595;
+    font-weight: bold;
+}
+.about-box-text2{
+    display:inline;
+}
+
+/* 연혁 */
+.history{
+    top: 1236px;
+    left: 0px;
+    width: 1920px;
+    height: 1314px;
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.history-box{
+    margin-top: 50px;
+    margin-left: 540px;
+    margin-right: 240px;
+    top: 1470px;
+    left: 540px;
+    width: 1140px;
+    height: 980px;
+}
+.history-box p{
+    font-size: 50px;
+    font-weight: bold;
+}
+.history-box hr{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border : 0px;
+    border-top: 1px solid #DBDBDB;
+}
+.history-content{
+    width: 710px;
+    top: -190.25px;
+    left: 389px;
+    border-left: 6px solid #C8C8C8;
+    height: 905px;
+    position: relative;
+}
+/* 연혁 큰 숫자 */
+.history-content h2{
+    top: -30px;
+    font-size: 32px;
+    color: #184B9F;
+    position: relative;
+    left: -70px;
+}
+/* 연혁 동그라미 */
+.history-content h2::before{
+    content: ""; 
+    position: absolute; 
+    left: 57px;
+    top: 50%;
+    width: 20px; 
+    height: 20px; 
+    border-radius: 100%; 
+    background: #184B9F; 
+    transform: translateY(-50%); 
+    box-sizing: border-box;
+}
+.history-content ol{
+    top: -43px;
+    position: relative;
+    list-style: none;
+}
+/* 연혁 내용 */
+.history-content li{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 20px;
+}
+.history-content div:first-child{
+    margin-bottom: 115px;
+}
+.history-content div{
+    margin-bottom: 50px;
+}
+
+/* 특허&인증 */
+.certification{
+    top: 3456px;
+    left: 0px;
+    width: 1920px;
+    height: 1454px;
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+/* 오시는길 */
+.directions{
+    width: 1920px;
+}
+#map{
+    margin-left: 240px;
+    width: 1440px;
+    height: 680px;
+}
