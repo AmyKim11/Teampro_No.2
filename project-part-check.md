@@ -4,7 +4,7 @@
 
 * 진도율 : 40%
 * 맡은 부분 : main page nav, project, service and footer
-* 07-21 한 부분: nav 부분 배열 재배치, 서브 nav도 같이 수정, 서비스 파트 스타일 시트 작업 
+* ~07-22 한 부분: nav 부분 max-width 수정 및 이미지 폴더별로 정리. html 지워진 부분 추가, header.html, header.css 전반적으로 코드 위치 수정 및 스타일 수정
 
 2 . 권O찬
 
