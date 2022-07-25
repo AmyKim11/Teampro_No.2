@@ -125,6 +125,11 @@ header{
    color: #FFFFFF;
 }
 
+.hide-nav-texts a{
+   text-decoration: none;
+   color: #FFFFFF;
+}
+
 .hide-nav-con-wrap{
    position: relative;
    max-width: 1440px;
