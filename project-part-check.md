@@ -26,12 +26,14 @@
 
 4 . 오O식
 
-* 진도율 : 40%
+* 진도율 : 50%
 * 맡은 부분 : main page(slider, resoft news, reference)
 
 |날짜|진행사항|특이사항|
 |---|---|---|
 |2022.07.21|slider 작업 80%완료, 그외 작업 미시작|없음|
+|2022.07.22|slider 90%완료, resoft news부분 시작|없음|
+|2022.07.25|slider 95%완료, resoft news 90%완료|없음|
 
 5 . 이O연
 
