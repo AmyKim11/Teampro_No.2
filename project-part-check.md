@@ -2,9 +2,12 @@
 
 1 . 김O민
 
-* 진도율 : 40%
+* 진도율 : 55%
 * 맡은 부분 : main page nav, project, service and footer
-* ~07-22 한 부분: nav 부분 max-width 수정 및 이미지 폴더별로 정리. html 지워진 부분 추가, header.html, header.css 전반적으로 코드 위치 수정 및 스타일 수정
+
+|날짜|진행사항|특이사항|
+|---|---|---|
+|2022.07.25|nav, footer 반응형 완료, 프로젝트와 서비스 파트 반응형 작업중|없음|
 
 2 . 권O찬
 
