@@ -245,23 +245,26 @@ header{
 .news_wrap{
    box-sizing: border-box;
    position: absolute;
+   display: flex;
+   flex-direction: column;
    top: 1000px;
    left: 240px;
-   width: 1440px;
+   max-width: 1440px;
    height: 450px;
 }
 
 .news_title{
    top: 1000px;
    left: 240px;
-   width: 386px;
+   width: 450px;
    height: 84px;
+   margin-bottom: 50px;
 }
 
 .news_title h1{
    top: 1000px;
    left: 240px;
-   width: 386px;
+   width: 400px;
    height: 58px;
    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
    letter-spacing: var(--unnamed-character-spacing-0);
@@ -286,8 +289,19 @@ header{
    opacity: 1;
 }
 
+.news_item{
+   width: 100%;
+   display: flex;
+}
+
 .news_item li{
-   display: inline-block;
+   width: 300px;
+   height: 316px;
+   /* margin-right: 80px; */
+}
+
+.news_item :last-child{
+   margin-right: 0;
 }
 
 /* ---------프로젝트 부분----------------------- */
