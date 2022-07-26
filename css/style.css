@@ -825,6 +825,9 @@ footer {
       width: 100%;
    }
 
+   .motion-pic-1{
+      padding: 0 0 0 11%;
+   }
    /* 서비스 파트 */
    .service-wrap {
       width: 100%;
@@ -846,6 +849,7 @@ footer {
    .ser-con-right {
       width: 100%;
    }
+   
 
    /* footer */
    footer {
@@ -937,6 +941,8 @@ footer {
       width: 100%;
    }
 
+   
+
    /* footer */
    footer {
       top: 5643px;
@@ -984,10 +990,20 @@ footer {
       text-align: right;
    }
 
+   .pro-con-left{
+      padding-right: 10%;
+   }
+   .motion-pic-1{
+      padding: 0 0 0 11%;
+   }
+
    /* service 부분 */
    .service-text {
       text-align: left;
    }
 
+   .service-con-wrap{
+      padding: 0 10%;
+   }
 
 }
