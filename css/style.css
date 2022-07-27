@@ -13,6 +13,11 @@ body {
    font-family: 'Noto Sans KR', sans-serif;
 }
 
+.border_check {
+   border: 1px solid #000;
+   z-index: 9999999999;
+}
+
 /* -------------header-nav 부분----------------- */
 
 header {
@@ -261,11 +266,6 @@ header {
 }
 
 /* -----------------resoft news 부분-------------------- */
-.border_check {
-   border: 1px solid #000;
-   z-index: 9999999999;
-}
-
 .news_wrap {
    position: absolute;
    top: 1000px;
@@ -733,6 +733,81 @@ header {
 .app-xr-img {
    background: rgba(0, 0, 0, 0.3) url('../img/service/XRcon.png') no-repeat center;
 }
+
+/*---------------- reference part ----------------*/
+.refer_wrap{
+   position: absolute;
+   top: 3945px;
+   left: 240px;
+   width: 1440px;
+   height: 734px;
+}
+
+.refer_title_wrap{
+   width: 100%;
+   height: 84px;
+   margin-bottom: 60px;
+}
+
+.refer_title{
+   width: 150px;
+   height: 58px;
+   font: normal bold 40px/58px var(--unnamed-font-family-noto-sans-kr);
+   letter-spacing: 0px;
+   text-align: left;
+   font: normal normal bold 40px/58px Noto Sans KR;
+   letter-spacing: 0px;
+   color: #1E1E1E;
+}
+
+.refer_para{
+   width: 102px;
+   height: 26px;
+   font: var(--unnamed-font-style-normal) normal medium 18px/26px var(--unnamed-font-family-noto-sans-kr);
+   letter-spacing: var(--unnamed-character-spacing-0);
+   text-align: left;
+   font: normal normal medium 18px/26px Noto Sans KR;
+   letter-spacing: 0px;
+   color: #C8C8C8;
+}
+
+.refer_img_wrap{
+   padding: 20px 20px 0 20px;
+   width: 1480px;
+   border-top: 1px solid black;
+}
+
+.refer_list{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: stretch;
+   align-content: space-evenly;
+}
+
+.refer_img_list{
+   width: 220px;
+   height: 100px;
+   background: #FFFFFF 0% 0% no-repeat padding-box;
+   border: 1px solid #DBDBDB;
+   margin-bottom: 20px;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#refer_empty{
+   width: 220px;
+   height: 100px;
+}
+
+.refer_img_list img{
+   max-width: 100%;
+   max-height: 100%;
+}
+
 
 /* ----------------footer 부분----------------- */
 
