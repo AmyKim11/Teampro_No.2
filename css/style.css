@@ -51,14 +51,19 @@ header {
 }
 
 .header-con-wrap nav {
-   margin-top: -35px;
+   margin-top: -30px;
    padding-right: 160px;
    float: right;
    width: fit-content;
    margin-right: 0;
 }
+ 
+.header-con-wrap ul{
+   margin: 0;
+}
 
 .nav-text {
+   /* line-height: 38px; */
    display: flex;
    justify-content: space-between;
    width: 400px;
@@ -85,6 +90,7 @@ header {
 .nav-text a li:after {
    display: block;
    margin-top: 3px;
+   line-height: 0;
    content: '';
    height: 6px;
    background: #FFFFFF;
