@@ -32,7 +32,7 @@
 }
 
 /* REsoft 소개 부분 */
-.about-us{
+#about-us{
     width: 1920px;
     margin-top: 80px;
     background-color: white;
@@ -48,7 +48,7 @@
     color: #C8C8C8;
     text-align: left;
 }
-.about-us .about-box{
+#about-us .about-box{
     margin: 50px 240px 0 240px;
     padding-bottom: 100px;
 }
@@ -76,7 +76,7 @@
 }
 
 /* 연혁 */
-.history{
+#history{
     top: 1236px;
     left: 0px;
     width: 1920px;
@@ -150,9 +150,43 @@
 .history-content div{
     margin-bottom: 50px;
 }
+/* 조직도 */
+#organization{
+    width: 1920px;
+}
+.organization-box{
+    margin-left: 260px;
+    width: 1600px;
+    height: 532px;
+}
+.organization-box div{
+    line-height: 85px;
+    text-align: center;
+    font-size: 26px;
+    width: 200px;
+    height: 80px;
+    border-radius: 20px;
+    border: 1px solid #184B9F;
+}
+.li1{
+    float: left;
+}
+.li1{
+    list-style: none;
+}
+.org{
+    color: #FFFFFF;
+    background-color: #184B9F;
+    margin-left: 600px;
+    display: inline-block;
+}
+.org-child{
+    margin-right: 100px;
+}
+
 
 /* 특허&인증 */
-.certification{
+#certification{
     top: 3456px;
     left: 0px;
     width: 1920px;
@@ -161,7 +195,7 @@
     opacity: 1;
 }
 /* 오시는길 */
-.directions{
+#directions{
     width: 1920px;
 }
 #map{
