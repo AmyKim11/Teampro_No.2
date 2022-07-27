@@ -733,13 +733,14 @@ header {
    position: absolute;
    top: 3945px;
    left: 240px;
-   width: 100%;
+   width: 1440px;
    height: 734px;
 }
 
 .refer_title_wrap{
-   width: 150px;
+   width: 100%;
    height: 84px;
+   margin-bottom: 60px;
 }
 
 .refer_title{
@@ -764,10 +765,42 @@ header {
    color: #C8C8C8;
 }
 
-.refer_list{
-   display: flex;
+.refer_img_wrap{
+   padding: 20px 20px 0 20px;
+   width: 1480px;
+   border-top: 1px solid black;
 }
 
+.refer_list{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: stretch;
+   align-content: space-evenly;
+}
+
+.refer_img_list{
+   width: 220px;
+   height: 100px;
+   background: #FFFFFF 0% 0% no-repeat padding-box;
+   border: 1px solid #DBDBDB;
+   margin-bottom: 20px;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#refer_empty{
+   width: 220px;
+   height: 100px;
+}
+
+.refer_img_list img{
+   max-width: 100%;
+   max-height: 100%;
+}
 
 
 /* ----------------footer 부분----------------- */
