@@ -144,7 +144,7 @@ header{
    width: 32px;
    height: 32px;
    cursor: pointer;
-   background: transparent url('/img/nav/hamburger_menu_black.svg') 0% 0% no-repeat padding-box;
+   background: transparent url('../img/nav/hamburger_menu_black.svg') 0% 0% no-repeat padding-box;
    opacity: 1;
 }
 
