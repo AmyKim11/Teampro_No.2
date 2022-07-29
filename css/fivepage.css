@@ -145,7 +145,7 @@ header{
    width: 32px;
    height: 32px;
    cursor: pointer;
-   background: transparent url('/img/nav/hamburger_menu_black.svg') 0% 0% no-repeat padding-box;
+   background: transparent url('../img/nav/hamburger_menu_black.svg') 0% 0% no-repeat padding-box;
    opacity: 1;
 }
 
@@ -310,17 +310,22 @@ header{
 .info-madang-text{
    color:#FFFFFF;
    text-align: center;
-   padding: 8%;
+   padding: 6.5%;
+}
+
+.all-madang{
+   display: flex;
 }
 
 .article-news{
-   margin-left: 12.5%;
+   margin-left: 11%;
 }
 
 .resoft-news{
    color: #1e1e1e;
    opacity: 1;
    font-size: 30px;
+   width: 170px;
 }
 
 .small-news{
@@ -328,44 +333,76 @@ header{
    opacity: 1;
 }
 
-.info-list{
-   padding: 3%;
-}
-
 .black-pass{
    display: inline-block;
-   background: #1e1e1e 0% 0% no-repeat padding-box;
-   border-radius: 50%;
-   width: 30px;
-   height: 30px;
+   background: 0% 0% no-repeat padding-box;
+   padding: 2% 0;
+   margin-top: 30px;
 }
 
 .info-pass{
-   background: transparent 0% 0% no-repeat padding-box;
+   display: inline-block;
+   background: #1e1e1e 0% 0% no-repeat padding-box;
    opacity: 1;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px; 
+}
+
+.info-pass img{
+   display: inline-block;
+   margin: 25%; 
+   width: 50%;
+}
+
+.info-list{
+   display: inline-block;  
+   letter-spacing: 0.8px;
 }
 
 .info-main-text{
-   text-align: center;
+   position: relative;
+   margin-top: 100px;
+   margin-left: 137px;
 }
 
 .info-main-text p{
    text-align: left;
-   margin-left: 15%;
-   padding: 0.5%;
+   padding: 0.6%;
    letter-spacing: 0.8px;
+   font-size: 12.5px;
+   font-weight: 450;
 }
 
 .lorem{
    padding-right: 30%;
+   width: 900px;
+   text-align: left;
 }
 
 .info-date{
-   padding-right: 63%;
+   text-align: left;
    letter-spacing: 0.8px;
-   color: #aaaaaa;
+   color: #AAAAAA;
    opacity: 1;
+   font-weight: 100;
+   margin-top: 10px;
 }
+
+.image-main-madang{
+   position: absolute;
+   width: 850px;
+}
+
+.image-main-madang img{
+   width: 100%;
+   margin-top: 50px;
+}
+
+/* .image-main-madang img{ 
+   width: 67%;
+}
+*/
 
 /* ----------------footer 부분----------------- */
 
