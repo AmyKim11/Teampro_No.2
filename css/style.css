@@ -334,7 +334,6 @@ header {
 .news_item li {
    width: 300px;
    height: 316px;
-   margin-right: 39px;
 }
 
 .news_item:last-child {
@@ -357,6 +356,7 @@ header {
 
 #item_seperator {
    border-left: 2px solid rgba(218, 213, 213, 0.5);
+   margin-left: 39px;
    margin-right: 39px;
 }
 
@@ -876,6 +876,42 @@ footer {
    word-wrap: keep-all;
 }
 
+/* 반응형(769이상 1280이하) */
+@media screen and (min-width:769px) and (max-width:1280px){
+   /* slider part */
+   .slider_para_wrap, .slider_button_wrap{
+      left: 140px;
+   }
+   #item_seperator{
+      display: none;
+   }
+
+   /* resoft news part */
+   .news_title{
+      margin: 0 auto;
+      margin-bottom: 50px;
+   }
+   .news_title h1{
+      display: block;
+      margin: 0 auto;
+   }
+   .news_title p{
+      display: block;
+      margin: 0 auto;
+   }
+   .news_content_wrap{
+      align-items: center;
+      justify-content: center;
+   }
+   .news_item{
+      display: flex;
+      width: 700px;
+      height: 650px;
+      flex-wrap: wrap;
+      margin: 0;
+      justify-content: space-evenly;
+   }
+}
 
 /* 반응형 - 해상도 (941px~1024이하일때) */
 
@@ -884,14 +920,6 @@ footer {
    /* nav 부분 */
    .header-con-wrap {
       max-width: 1024px;
-   }
-
-   /* slider part */
-   .slider_para_wrap, .slider_button_wrap{
-      left: 140px;
-   }
-   #item_seperator{
-      display: none;
    }
 
    /* 프로젝트 부분 */
