@@ -82,9 +82,9 @@ header{
 .nav-text li:hover{
    color: #184B9F;
 }
-/* .nav-text a:first-of-type li:after, */ /*<- 두번째, 세번째, 네번째 서브 해당되는 사람이면 살려야함*/
-.nav-text a:nth-of-type(2) li:after, /*<- 첫번째, 세번째, 마지막 서브해당되는 사람이면 살려야 함*/
-.nav-text a:last-of-type li:after{ /*<- 첫번째, 두번째 해당되는 서브만 살림*/
+.nav-text a:first-of-type li:after, /*<- 두번째, 세번째, 네번째 서브 해당되는 사람이면 살려야함*/
+.nav-text a:nth-of-type(2) li:after /*<- 첫번째, 세번째, 마지막 서브해당되는 사람이면 살려야 함*/
+/*.nav-text a:last-of-type li:after*/{ /*<- 첫번째, 두번째 해당되는 서브만 살림*/
    display:block;
    margin-top: 3px;
    content: '';
@@ -96,19 +96,12 @@ header{
    transform-origin: 0% 50%;
 }
 
-/*.nav-text a:first-of-type li:hover:after,*/ /*위와 같은 규칙*/
-.nav-text a:nth-of-type(2) li:hover:after,
-.nav-text a:last-of-type li:hover:after{
+.nav-text a:first-of-type li:hover:after, /*위와 같은 규칙*/
+.nav-text a:nth-of-type(2) li:hover:after
+/*.nav-text a:last-of-type li:hover:after*/{
    transform: scaleX(1);
 }
 
-
-.nav-text a:first-of-type li{
-   /* position: absolute;
-   top: 26px;
-   left: 1198px; */
-   color: #184B9F; /*<- 두번째, 세번째, 네번째 서브 해당되는 사람은 주석처리 해야 함*/
-}
 
 .nav-text .underline{
    margin-top: 3px;
@@ -118,24 +111,21 @@ header{
    border-radius: 3px; 
 }
 
-/*.under-1{
+.under-1{
     visibility: hidden;  
-}*/
+}
 .nav-text .under-2{
    display: none; /*<-두번째 서브 페이지는 주석처리 하고, 나머지 1이랑3은 살림*/
 }
-.nav-text .under-3{
-   display: none;/*<-세번째,네번째(마지막) 서브 페이지는 주석처리 함 위의
-   under-1,2는 살려야 함*/
-}
+
 
 
 
 /*.nav-text a:nth-of-type(2) li{
     /* color: #184B9F;} */ /*<- 첫번째 세번째 네번째 서브 담당자는 주석처리해야함*/
 
-/*.nav-text a:last-of-type li{
-    /* color: #184B9F;} */ /*<-첫번째, 두번째 서브 담당자는 주석처리 해야함*/
+.nav-text a:last-of-type li{
+     color: #184B9F;}  /*<-첫번째, 두번째 서브 담당자는 주석처리 해야함*/
 
 
 .hamburger-menu{
@@ -145,7 +135,7 @@ header{
    width: 32px;
    height: 32px;
    cursor: pointer;
-   background: transparent url('/img/nav/hamburger_menu_black.svg') 0% 0% no-repeat padding-box;
+   background: transparent url('../img/nav/hamburger_menu_black.svg') 0% 0% no-repeat padding-box;
    opacity: 1;
 }
 
@@ -310,17 +300,23 @@ header{
 .info-madang-text{
    color:#FFFFFF;
    text-align: center;
-   padding: 8%;
+   padding: 6.5%;
 }
+ /* fivepage 서브 콘텐츠 article  */
 
-.article-news{
-   margin-left: 12.5%;
+.all-madang{
+   max-width: 1440px;
+   width: 100%;
+   margin: 50px auto;
+   display: flex;
+   justify-content: space-evenly;
 }
 
 .resoft-news{
    color: #1e1e1e;
    opacity: 1;
    font-size: 30px;
+   width: 170px;
 }
 
 .small-news{
@@ -328,50 +324,90 @@ header{
    opacity: 1;
 }
 
-.info-list{
-   padding: 3%;
-}
-
 .black-pass{
    display: inline-block;
-   background: #1e1e1e 0% 0% no-repeat padding-box;
-   border-radius: 50%;
-   width: 30px;
-   height: 30px;
+   background: 0% 0% no-repeat padding-box;
+   padding: 2% 0;
+   margin-top: 30px;
 }
 
 .info-pass{
-   background: transparent 0% 0% no-repeat padding-box;
+   display: inline-block;
+   background: #1e1e1e 0% 0% no-repeat padding-box;
    opacity: 1;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px; 
 }
 
+.info-pass img{
+   display: inline-block;
+   margin: 25%; 
+   width: 50%;
+}
+
+.info-list{
+   display: inline-block;  
+   letter-spacing: 0.8px;
+   width: fit-content;
+   padding: 3px 3px;
+}
+
+/* fivepage 서브 콘텐츠 section  */
+
 .info-main-text{
-   text-align: center;
+   position: relative;
+   margin-top: 100px;
+   margin-left: 137px;
+}
+
+.madang-line{
+   border-bottom: #000000 solid 1px;
 }
 
 .info-main-text p{
    text-align: left;
-   margin-left: 15%;
-   padding: 0.5%;
+   padding: 0.6%;
    letter-spacing: 0.8px;
+   font-size: 12.5px;
+   font-weight: 450;
 }
 
 .lorem{
-   padding-right: 30%;
+   
+   width: 900px;
+   
 }
 
 .info-date{
-   padding-right: 63%;
+   text-align: left;
    letter-spacing: 0.8px;
-   color: #aaaaaa;
+   color: #AAAAAA;
    opacity: 1;
+   font-weight: 100;
+   margin-top: 10px;
 }
+
+.image-main-madang{
+   position: absolute;
+   width: 850px;
+}
+
+.image-main-madang img{
+   width: 100%;
+   margin-top: 50px;
+}
+
+/* .image-main-madang img{ 
+   width: 67%;
+}
+*/
 
 /* ----------------footer 부분----------------- */
 
 footer{
    position: absolute;
-   top: 4879px;
+   top: 2358px;
    left: 0;
    width: 100%;
    height: 250px;
