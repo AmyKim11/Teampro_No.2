@@ -6,18 +6,19 @@
     padding: 0;
 }
 
-/* 회사소개 그림부분 */
+/* -----회사소개 그림부분----- */
 .intro{
     /* Layout Properties */
     top: 80px;
     left: 0px;
-    width: 1920px;
+    width: 100%;
     height: 300px;
     /* UI Properties */
     background: #1E1E1E 0% 0% no-repeat padding-box;
     opacity: 0.6;
     position: relative;
 }
+
 .intro-text{
     top: 130px;
     left: 865px;
@@ -31,9 +32,9 @@
     opacity: 1;
 }
 
-/* REsoft 소개 부분 */
+/* -----REsoft 소개 부분----- */
 #about-us{
-    width: 1920px;
+    width:100%;
     margin-top: 80px;
     background-color: white;
 }
@@ -49,6 +50,7 @@
     text-align: left;
 }
 #about-us .about-box{
+    width: 1440px;
     margin: 50px 240px 0 240px;
     padding-bottom: 100px;
 }
@@ -75,11 +77,11 @@
     display:inline;
 }
 
-/* 연혁 */
+/* -----연혁----- */
 #history{
     top: 1236px;
     left: 0px;
-    width: 1920px;
+    width: 100%;
     height: 1314px;
     background: #F9F9F9 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -150,56 +152,155 @@
 .history-content div{
     margin-bottom: 50px;
 }
-/* 조직도 */
+
+/* ----조직도----- */
 #organization{
-    width: 1920px;
+    width: 100%;
 }
-.organization-box{
+.tree{
     margin-left: 260px;
-    width: 1600px;
+    margin-bottom: 100px;
+    width: 1400px;
     height: 532px;
 }
-.organization-box div{
-    line-height: 85px;
+.org-ul {
+    padding-top: 70px; 
+    position: relative;
+}
+.org-li {
+	float: left; 
     text-align: center;
-    font-size: 26px;
-    width: 200px;
-    height: 80px;
-    border-radius: 20px;
-    border: 1px solid #184B9F;
+	list-style-type: none;
+	position: relative;
+	padding: 70px 50px 0 50px;
 }
-.li1{
-    float: left;
+.li-left::before,.li-left::after{
+    right: 60%;
 }
-.li1{
-    list-style: none;
+/* 아래 새로선 */
+.org-li::before, .org-li::after{
+	content: '';
+	position: absolute; top: 0; right: 40%;
+	border-top: 1px solid #707070;
+	width: 170px; height: 70px;
+}
+.org-li::after{
+	right: auto; left: 50%;
+	border-left: 1px solid #707070;
+}
+.org-li :first-child::after{
+	right: auto; left: 40%;
+	border-left: 1px solid #707070;
+}
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.org-li:only-child::after, .org-li:only-child::before {
+	display: none;
+}
+/*Remove space from the top of single children*/
+.org-li:only-child{ 
+    padding-top: 0;
+}
+/* 양쪽 선 제거 */
+.org-li:first-child::before, .org-li:last-child::after{
+	border: 0 none;
+}
+/* 오른쪽 새로선 */
+.org-li:last-child::before{
+	border-right: 1px solid #707070;
+	border-radius: 0 5px 0 0;
+}
+/* 위 새로선 */
+.org-ul::before{
+	content: '';
+	position: absolute; 
+    top: 0; 
+    left: 50%;
+	border-left: 1px solid #707070;
+	width: 0; height: 70px;
+}
+.tree li p{
+    line-height: 80px;
+    width: 194px;
+    height: 74px;
+	border: 3px solid #184B9F;
+	color: #1E1E1E;
+	font-size: 26px;
+	display: inline-block;
+	border-radius: 20px;
 }
 .org{
-    color: #FFFFFF;
     background-color: #184B9F;
-    margin-left: 600px;
-    display: inline-block;
+    color:#FFFFFF !important;
+    
 }
-.org-child{
-    margin-right: 100px;
+.li-left{
+    padding-left: 0;
+}
+.li-right{
+    padding-right: 0;
+}
+.work{
+    margin-top: 40px;
+    width: 200px;
+}
+.work li{
+    list-style: none;
+    text-align: left;
+    font-size: 20px;
+    line-height: 38.4px;
+    letter-spacing: 0px;
 }
 
-
-/* 특허&인증 */
+/* -----특허&인증----- */
 #certification{
     top: 3456px;
     left: 0px;
-    width: 1920px;
+    width: 100%;
     height: 1454px;
     background: #F9F9F9 0% 0% no-repeat padding-box;
     opacity: 1;
 }
-/* 오시는길 */
+/* -----오시는길----- */
 #directions{
-    width: 1920px;
+    width: 100%;
 }
 #map{
+    margin-top: 50px;
     margin-left: 240px;
     width: 1440px;
     height: 680px;
+}
+.contact-box{
+    margin-left: 240px;
+    margin-bottom: 200px;
+    width: 1440px;
+    height: 230px;
+}
+.contact-box hr{
+    color: #DBDBDB;
+    border : 0px;
+    border-top: 1px solid #DBDBDB;
+}
+.contact-box hr:last-child{
+    color: black;
+}
+.contact-text{
+    height: 115px;
+}
+.contact-text p{
+    display: inline-block;
+    line-height: 115px;
+}
+.contact-text p:first-child{
+    width: 250px;
+    text-align: center;
+    margin-left: 200px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1E1E1E;
+}
+.contact-text p:last-child{
+    font-size: 20px;
+    color: #959595;
 }
