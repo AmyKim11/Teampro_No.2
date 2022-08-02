@@ -301,13 +301,15 @@ header{
    color:#FFFFFF;
    text-align: center;
    padding: 6.5%;
+   font-size: 40px;
 }
  /* fivepage 서브 콘텐츠 article  */
 
 .all-madang{
+   position: relative;
    max-width: 1440px;
    width: 100%;
-   margin: 50px auto;
+   margin: 100px auto;
    display: flex;
    justify-content: space-evenly;
 }
@@ -315,13 +317,14 @@ header{
 .resoft-news{
    color: #1e1e1e;
    opacity: 1;
-   font-size: 30px;
-   width: 170px;
+   font-size: 40px;
+   width: 211px;
 }
 
 .small-news{
    color: #c8c8c8;
    opacity: 1;
+   font-size: 18px;
 }
 
 .black-pass{
@@ -329,6 +332,7 @@ header{
    background: 0% 0% no-repeat padding-box;
    padding: 2% 0;
    margin-top: 30px;
+   width: 130px;
 }
 
 .info-pass{
@@ -336,8 +340,8 @@ header{
    background: #1e1e1e 0% 0% no-repeat padding-box;
    opacity: 1;
    border-radius: 50%;
-   width: 30px;
-   height: 30px; 
+   width: 42px;
+   height: 42px; 
 }
 
 .info-pass img{
@@ -349,34 +353,34 @@ header{
 .info-list{
    display: inline-block;  
    letter-spacing: 0.8px;
-   width: fit-content;
-   padding: 3px 3px;
+   width: 84px;
+   text-align: right;
 }
 
 /* fivepage 서브 콘텐츠 section  */
 
 .info-main-text{
    position: relative;
-   margin-top: 100px;
+   margin-top: 134px;
    margin-left: 137px;
 }
 
 .madang-line{
-   border-bottom: #000000 solid 1px;
+   border-bottom: #184b9f solid 2px;
+   width: 1060px;
+   opacity: 1;
+   padding-bottom: 30px;
 }
 
 .info-main-text p{
    text-align: left;
    padding: 0.6%;
-   letter-spacing: 0.8px;
-   font-size: 12.5px;
-   font-weight: 450;
+   letter-spacing: 0.8px; 
 }
 
 .lorem{
-   
-   width: 900px;
-   
+   font-size: 24px;
+   letter-spacing: 1.2px;
 }
 
 .info-date{
@@ -385,23 +389,22 @@ header{
    color: #AAAAAA;
    opacity: 1;
    font-weight: 100;
-   margin-top: 10px;
+   margin-top: 8px;
 }
 
 .image-main-madang{
-   position: absolute;
-   width: 850px;
+   position: absolute;  
+   width: 1060px; 
 }
 
-.image-main-madang img{
-   width: 100%;
-   margin-top: 50px;
+.image-main-madang img{  
+   margin-top: 30px;
 }
 
-/* .image-main-madang img{ 
-   width: 67%;
+.madang-last{
+   margin-top: 30px;
+   border-bottom: #184b9f solid 2px;
 }
-*/
 
 /* ----------------footer 부분----------------- */
 
