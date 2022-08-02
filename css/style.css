@@ -747,9 +747,14 @@ header {
 .refer_wrap{
    position: absolute;
    top: 3945px;
-   left: 240px;
-   width: 1440px;
+   width: 100%;
    height: 734px;
+}
+
+.refer_content_wrap{
+   left: 240px;
+   max-width: 1440px;
+   margin: 0 auto;
 }
 
 .refer_title_wrap{
@@ -877,6 +882,7 @@ footer {
 }
 
 /* 반응형(769이상 1280이하) */
+/* resoft news 파트의 각 이미지 아래위로 더 띄워야함 */
 @media screen and (min-width:769px) and (max-width:1280px){
    /* slider part */
    .slider_para_wrap, .slider_button_wrap{
@@ -906,16 +912,34 @@ footer {
    .news_item{
       display: flex;
       width: 700px;
-      height: 650px;
+      height: 816px;
       flex-wrap: wrap;
       margin: 0;
       justify-content: space-evenly;
+   }
+
+   /* reference part */
+   .refer_wrap{
+      left: 140px;
+      width: 1000px;
+      height: 1200px;
+   }
+   .refer_title, .refer_para{
+      display: block;
+      margin: 0 auto;
+   }
+   .refer_img_wrap{
+      width: 1000px;
+   }
+   .refer_list{
+      width: 800px;
+      margin: 0 auto;
    }
 }
 
 /* 반응형 - 해상도 (941px~1024이하일때) */
 
-@media screen and (min-width:941px) and (max-width:1024px) {
+@media screen and (min-width:941px) and (max-width:1280px) {
 
    /* nav 부분 */
    .header-con-wrap {
