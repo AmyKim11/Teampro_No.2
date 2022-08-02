@@ -881,18 +881,18 @@ footer {
    word-wrap: keep-all;
 }
 
-/* 반응형(769이상 1280이하) */
-/* resoft news 파트의 각 이미지 아래위로 더 띄워야함 */
-@media screen and (min-width:769px) and (max-width:1280px){
+/* 반응형 - 해상도 (769px~1280이하일때) */
+
+@media screen and (min-width:769px) and (max-width:1280px) {
    /* slider part */
    .slider_para_wrap, .slider_button_wrap{
       left: 140px;
    }
+
+   /* resoft news part */
    #item_seperator{
       display: none;
    }
-
-   /* resoft news part */
    .news_title{
       margin: 0 auto;
       margin-bottom: 50px;
@@ -920,26 +920,28 @@ footer {
 
    /* reference part */
    .refer_wrap{
-      left: 140px;
-      width: 1000px;
+      top: 6150px;
+      width: 100%;
       height: 1200px;
    }
    .refer_title, .refer_para{
       display: block;
       margin: 0 auto;
    }
-   .refer_img_wrap{
-      width: 1000px;
-   }
    .refer_list{
       width: 800px;
       margin: 0 auto;
    }
-}
-
-/* 반응형 - 해상도 (941px~1024이하일때) */
-
-@media screen and (min-width:941px) and (max-width:1280px) {
+   .refer_img_wrap{
+      width: 100%;
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 0;
+      padding-top: 20px;
+   }
+   .refer_list{
+      max-width: 700px;
+   }
 
    /* nav 부분 */
    .header-con-wrap {
@@ -947,43 +949,38 @@ footer {
    }
 
    /* 프로젝트 부분 */
-
    .project-wrap {
       width: 100%;
       height: 1911px;
+      margin-top: 400px;
    }
-
    .project-con-wrap {
       max-width: fit-content;
       flex-direction: column-reverse;
    }
-
    .pro-con-right {
       margin: -2px 20% 0 15%;
    }
-
    .project-text {
       text-align: center;
    }
-
    .ani-player {
       padding: 0 10%;
    }
-
    .ecoce-back-img,
    .moado-back-img {
       width: 100%;
    }
-
    .motion-pic-1{
       padding: 0 0 0 11%;
    }
+
    /* 서비스 파트 */
    .service-wrap {
       width: 100%;
       height: 2200px;
       background: #F2F6FC;
-      top: 3461px;
+      top: 3861px;
    }
 
    .service-con-wrap {
@@ -1003,7 +1000,7 @@ footer {
 
    /* footer */
    footer {
-      top: 5643px;
+      top: 7700px;
    }
 
 }
@@ -1015,12 +1012,9 @@ footer {
    .header-con-wrap {
       max-width: 1024px;
    }
-
    .header-con-wrap nav {
       display: none;
    }
-
-
    .small-size-nav-wrap {
       position: relative;
       width: 100%;
@@ -1029,91 +1023,33 @@ footer {
       display: block;
       border-bottom: #F8F8F8 1px solid;
    }
-
    .slide-nav-text {
       position: absolute;
       width: 400px;
       right: 160px;
    }
-
    .hide-nav-flex-wrap {
       top: 46px;
    }
 
-   /* 프로젝트 부분 */
-
-   .project-wrap {
-      width: 100%;
-      height: 1911px;
-   }
-
-   .project-con-wrap {
-      max-width: fit-content;
-      flex-direction: column-reverse;
-   }
-
-   .pro-con-right {
-      margin: -2px 20% 0 15%;
-   }
-
-   .project-text {
-      text-align: center;
-   }
-
-   .ani-player {
-      padding: 0 10%;
-   }
-
-   .ecoce-back-img,
-   .moado-back-img {
-      width: 100%;
-   }
-
-   /* 서비스 파트 */
-   .service-wrap {
-      width: 100%;
-      height: 2200px;
-      background: #F2F6FC;
-      top: 3461px;
-   }
-
-   .service-con-wrap {
-      max-width: fit-content;
-      flex-direction: column;
-   }
-
-   .service-text {
-      text-align: center;
-   }
-
-   .ser-con-left,
-   .ser-con-right {
-      width: 100%;
-   }
-
-   
-
    /* footer */
    footer {
-      top: 5643px;
+      top: 7700px;
       height: 331px;
    }
-
    .footer-con-wrap {
       padding: 0 5%;
    }
-
    .footer-text-wrap {
       flex-direction: column;
    }
-
    .footer-left-con {
       margin-bottom: 30px;
    }
 }
 
-/* 해상도 767이하 */
-@media (max-width:767px) {
+/* 해상도 768이하 */
+@media (max-width:768px) {
 
    /* ci logo 부분 */
    .ci-logo {
@@ -1132,6 +1068,9 @@ footer {
    }
 
    /* project */
+   .project-wrap{
+      margin-top: 400px;
+   }
    .pro-con-right {
       max-width: 475px;
    }
@@ -1148,6 +1087,10 @@ footer {
    }
 
    /* service 부분 */
+   .service-wrap{
+      top: 3097px;
+      background: #F2F6FC;
+   }
    .service-text {
       text-align: left;
    }
@@ -1155,5 +1098,68 @@ footer {
    .service-con-wrap{
       padding: 0 10%;
    }
+   /* footer 부분 */
+   footer {
+      top: 5765px;
+   }
 
+   /* slider part */
+   .slider_para_wrap, .slider_button_wrap{
+      left: 75px;
+      max-width: 700px;
+   }
+
+   /* resoft news part */
+   #item_seperator{
+      display: none;
+   }
+   .news_title{
+      margin: 0 auto;
+      margin-bottom: 50px;
+   }
+   .news_title h1{
+      display: block;
+      margin: 0 auto;
+   }
+   .news_title p{
+      display: block;
+      margin: 0 auto;
+   }
+   .news_content_wrap{
+      align-items: center;
+      justify-content: center;
+   }
+   .news_item{
+      display: flex;
+      width: 700px;
+      height: 816px;
+      flex-wrap: wrap;
+      margin: 0;
+      justify-content: space-evenly;
+   }
+
+   /* reference part */
+   .refer_wrap{
+      top: 4315px;
+      width: 100%;
+      height: 1200px;
+   }
+   .refer_title, .refer_para{
+      display: block;
+      margin: 0 auto;
+   }
+   .refer_list{
+      width: 800px;
+      margin: 0 auto;
+   }
+   .refer_img_wrap{
+      width: 100%;
+      max-width: 704px;
+      margin: 0 auto;
+      padding: 0;
+      padding-top: 20px;
+   }
+   .refer_list{
+      max-width: 700px;
+   }
 }
