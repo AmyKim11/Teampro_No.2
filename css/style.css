@@ -21,11 +21,11 @@ body {
 /* -------------header-nav 부분----------------- */
 
 header {
-   position: relative;
+   position: fixed;
    text-align: center;
-   top: 0px;
-   left: 0px;
-   margin: 0 auto;
+   top: 0;
+   left: 0;
+   margin: 0 auto !important;
    width: 100%;
    max-width: 1920px;
    height: 80px;
@@ -101,7 +101,7 @@ header {
 .hamburger-menu {
    position: absolute;
    top: 25px;
-   right: 20px;
+   right: 0;
    width: 32px;
    height: 32px;
    cursor: pointer;
@@ -122,6 +122,7 @@ header {
    right: 0;
    width: 100%;
    max-width: 1920px;
+   margin: 0 auto;
    height: 207px;
    background: #184B9F 0% 0% no-repeat padding-box;
    border: 1px solid #707070;
@@ -130,7 +131,7 @@ header {
    color: #FFFFFF;
 }
 
-.hide-nav-texts a {
+.hide-nav-texts li a {
    text-decoration: none;
    color: #FFFFFF;
 }
@@ -151,11 +152,21 @@ header {
    display: none;
 }
 
-.slide-nav-text a:last-of-type li {
+
+.slide-nav-text li a,
+.slide-nav-text-under li a{
+   display: block;
+   text-align: left;
+   padding-bottom: 5px;
+   letter-spacing: 0px;
+   opacity: 1;
+   cursor: pointer;
+}
+.slide-nav-text li:last-child a  {
    padding-right: 18px;
 }
 
-.slide-nav-text a:nth-of-type(2) li {
+.slide-nav-text li:nth-child(2) a{
    padding-left: 18px;
 }
 
@@ -163,6 +174,8 @@ header {
    display: flex;
    justify-content: space-between;
 }
+
+
 
 .hide-nav-flex-wrap {
    position: absolute;
@@ -174,13 +187,7 @@ header {
 }
 
 
-.hide-nav-texts a li {
-   text-align: left;
-   padding-bottom: 5px;
-   letter-spacing: 0px;
-   opacity: 1;
-   cursor: pointer;
-}
+
 
 .hide-nav-texts {
    display: none;
@@ -932,6 +939,11 @@ footer {
       max-width: 1024px;
    }
 
+   .hamburger-menu{
+      right: 20px;
+   }
+
+
    /* 프로젝트 부분 */
    .project-wrap {
       width: 100%;
@@ -1050,7 +1062,10 @@ footer {
    .hide-nav-texts {
       height: 220px;
    }
-
+   
+   .hamburger-menu{
+      right: 20px;
+   }
    /* project */
 
    .project-wrap {
