@@ -1007,7 +1007,6 @@ footer {
 
 /* 반응형 - 해상도 940px 이하 */
 @media (max-width:940px) {
-
    /* nav  */
    .header-con-wrap {
       max-width: 1024px;
