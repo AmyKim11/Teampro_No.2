@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.wrap{position:relative;
+   
+}
+
+.state{ 
+    /* Layout Properties */
+    top: 80px;
+    left: 0px;
+    width: 100%;
+    height: 300px;
+    
+    /* UI Properties */
+    
+    background-image: url(../img/square64.png) ;
+    background-size:cover;
+    opacity: 0.8;
+    position: relative;
+}
+.state-text{
+    /* Layout Properties */
+
+
+padding-top:120px;
+margin:0 auto;
+width: 148px;
+height: 58px;
+/* UI Properties */
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: center;
+font: normal normal bold 40px/58px Noto Sans KR;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+
+.ecoce-wrap{
+    width: 100%;
+    
+
+}
+
+.ecoce{margin:0 auto;
+    
+position: relative;
+/* Layout Properties */
+width: 1441px;
+
+top: 150px;
+/* UI Properties */
+opacity: 1;}
+
+.ecoce-text{
+    /* Layout Properties */
+    top: 480px;
+    left: 240px;
+    width: 141px;
+    height: 84px;
+    /* UI Properties */
+    opacity: 1;}
+
+    .ecoce-head{
+    /* UI Properties */
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal bold 40px/58px Noto Sans KR;
+letter-spacing: 0px;
+color: #1E1E1E;
+opacity: 1;}
+
+.ecoce-second{
+    /* UI Properties */
+font: var(--unnamed-font-style-normal) normal medium 18px/26px var(--unnamed-font-family-noto-sans-kr);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal medium 18px/26px Noto Sans KR;
+letter-spacing: 0px;
+color: #C8C8C8;
+opacity: 1;
+}
+
+
+.ecoce1{margin-top: 50px;
+    width: 679px;
+    height: 592px;
+    background-image: url('../img/Ecoce(1).png') ;
+    position: relative;
+    opacity: 1;
+
+}
+
+.ecoce2{
+    position:absolute;
+    width: 475px;
+    height: 687px;
+    background-image: url('../img/Ecoce(2).png');
+    left:229px ;
+    top:58px
+}
+
+
+.eco-clean-earth{
+    position: absolute;
+    top:120px;
+right:0px;
+    width: 325px;
+height: 88px;
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-44) var(--unnamed-font-family-noto-sans-kr);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: right;
+font: normal normal bold 30px/44px Noto Sans KR;
+letter-spacing: 0px;
+color: #1E1E1E;
+opacity: 1;
+}
+
+.eco-clean-earth2{
+    position: absolute;
+   top:370px;
+right: 0px;
+width: 452px;
+height: 125px;
+}
+
+.eco-clean-earth2 p{
+   margin-top: 20px;
+/* UI Properties */
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/32px var(--unnamed-font-family-noto-sans-kr);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: right;
+font: normal normal bold 22px/32px Noto Sans KR;
+letter-spacing: 0px;
+color: #1E1E1E;
+opacity: 1;
+}
+
+.icon{position:absolute;
+    right:0px;
+}
+
+.playstore {
+    
+
+    position:relative;
+    width: 188px;
+height: 57px;
+margin-right:30px;
+/* UI Properties */
+background: #1E1E1E 0% 0% no-repeat padding-box;
+border-radius: 69px;
+opacity: 1;
+display: inline-block;
+
+}
+
+.playstore img{
+    position:absolute;
+    margin-left: 20px;
+    margin-top:10px;
+    width: 31px;
+height: 35px;
+/* UI Properties */
+background: transparent url('img/그룹 100.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+display: inline-block;
+}
+
+.playstore p{
+    position:absolute;
+    margin-top:5px;
+    right:10px;
+    width: 120px;
+height: 42px;
+    /* UI Properties */
+font: var(--unnamed-font-style-normal) normal medium 14px/22px var(--unnamed-font-family-noto-sans-kr);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal medium 14px/22px Noto Sans KR;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+display: inline-block;
+}
+
+.appstore {
+    position:relative;
+    right:0px;
+    width: 188px;
+height: 57px;
+/* UI Properties */
+background: #1E1E1E 0% 0% no-repeat padding-box;
+border-radius: 69px;
+opacity: 1;
+display: inline-block;
+}
+
+.appstore img{
+    margin-left: 20px;
+    margin-top:10px;
+    position:absolute;
+    width: 29px;
+height: 35px;
+background: transparent url('img/그룹 102.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+display: inline-block;
+}
+
+.appstore p{
+    position:absolute;
+    margin-top:5px;
+    right:10px;
+    width: 120px;
+height: 42px;
+    /* UI Properties */
+font: var(--unnamed-font-style-normal) normal medium 14px/22px var(--unnamed-font-family-noto-sans-kr);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal medium 14px/22px Noto Sans KR;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+display: inline-block;
+}
+
+.moado{
+    
+    top:443px;
+    position:relative;
+    width:100%;
+    height: 820px;}
+    
+
+
+
+.moado-text{
+    position:relative;
+    /* Layout Properties */
+    margin:0 auto;
+    margin-bottom: 40px;
+    
+    width: 100%;
+    height: 84px;
+    /* UI Properties */
+    opacity: 1;}
+
+.moado-text2{position:relative;
+    margin:0 auto;
+    width:1441px;
+
+
+
+}
+
+    .moado-head{
+    /* UI Properties */
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal bold 40px/58px Noto Sans KR;
+letter-spacing: 0px;
+color: #1E1E1E;
+opacity: 1;}
+
+.moado-second{
+    /* UI Properties */
+font: var(--unnamed-font-style-normal) normal medium 18px/26px var(--unnamed-font-family-noto-sans-kr);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal medium 18px/26px Noto Sans KR;
+letter-spacing: 0px;
+color: #C8C8C8;
+opacity: 1;
+}
+
+.moado-wrap{
+    position:relative;
+    width: 100%;
+    height: 686px;
+    background: transparent linear-gradient(223deg, #E4CDE800 0%, #339BE133 100%) 0% 0% no-repeat padding-box;
+
+}
+
+.moado-wrap2{
+    position:relative;
+    height: 686px;
+    width:1441px;
+    margin:0 auto;
+    
+}
+
+.moado-wrap2 img:first-child
+{position:absolute;
+    
+    width: 850px;
+height: 471px;}
+
+.moado-wrap2 img:nth-child(2){
+    position:absolute;
+    left: 460px;
+    bottom:0px;
+    width: 680px;
+height: 482px;}
+
+.moado-book{
+    
+        position: absolute;
+        top:0px;
+    right:0px;
+    width: 340px;
+    height: 44px;
+    /* UI Properties */
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-44) var(--unnamed-font-family-noto-sans-kr);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: right;
+    font: normal normal bold 30px/44px Noto Sans KR;
+    letter-spacing: 0px;
+    color: #1E1E1E;
+    opacity: 1;
+    }
+
+.moado-text3 img:first-child{
+    position:absolute;
+    top:200px;
+    right:0px;
+    width: 452px;
+    height: 105px;
+    }
+
+
+.icon .site{
+    right:0px;
+    position:absolute;
+    top:420px;
+    width: 153px;
+    height: 57px;
+    /* UI Properties */
+    background: #1E1E1E 0% 0% no-repeat padding-box;
+    border-radius: 69px;
+    opacity: 1;
+    
+
+}
+
+.icon .site p
+{width: 120px;
+height: 20px;
+margin:0 auto;
+padding-top:15px;
+
+/* UI Properties */
+font: var(--unnamed-font-style-normal) normal medium 14px/22px var(--unnamed-font-family-noto-sans-kr);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: center;
+font: normal normal medium 14px/22px Noto Sans KR;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;}
+
+
+.ETC{width: 100%;
+    height:686px;
+
+position:absolute;
+top:2289px;}
+
+.ETC2{position:relative;
+    margin:0 auto;
+    margin-top:80px;
+    width: 1440px;
+    height: 484px;
+    padding:0px;
+    
+
+}
+
+.ETC-text{
+    /* Layout Properties */
+    top: 480px;
+    left: 240px;
+    width: 89px;
+height: 84px;
+    /* UI Properties */
+    opacity: 1;
+margin-bottom:40px;}
+
+    .ETC-head{
+        width: 75px;
+height: 58px;
+    /* UI Properties */
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal bold 40px/58px Noto Sans KR;
+letter-spacing: 0px;
+color: #1E1E1E;
+opacity: 1;}
+
+.ETC-second{
+    width: 89px;
+height: 26px;
+    /* UI Properties */
+font: var(--unnamed-font-style-normal) normal medium 18px/26px var(--unnamed-font-family-noto-sans-kr);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal medium 18px/26px Noto Sans KR;
+letter-spacing: 0px;
+color: #C8C8C8;
+opacity: 1;
+}
+
+.ETC2 img{
+    padding:0px;
+width: 228px;
+height: 350px;
+box-shadow: 2px 2px 10px #DBDBDB;
+}
+
+.mask-group22{
+    margin-right:71px;
+}
+
+.mask-group21{
+    margin-right:71px;
+}
+
+.mask-group20{
+    margin-right:71px;
+}
+
+.mask-group23{
+    margin-right:71px;
+}
+
+
