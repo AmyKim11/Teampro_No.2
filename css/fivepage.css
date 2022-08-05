@@ -279,28 +279,21 @@ header{
 
 /* ----------------5page 부분----------------- */
 
-.info-madang{
-   top: 8%;
-   left: 0px;
-   width: 100%;
-   height: 300px;
-}
-
 .info-madang-ui{
-   background: #FFFFFF 0% 0% no-repeat padding-box url('../img/infomadang/rectan64.png');
-   background-size: 100%; 
-   opacity: 1;
+   background: rgba(0, 0, 0, 0.3) url('../img/infomadang/rectan64.png') 0% 0% no-repeat;
+   background-blend-mode: darken;
+   background-size: cover; 
+   border: 1px solid #707070;  
 }
 
 .info-madang-ui img{
-   width: 100%;
-   height: 300px;
+   width: 100%;  
 }
 
 .info-madang-text{
    color:#FFFFFF;
    text-align: center;
-   padding: 6.5%;
+   line-height: 300px;
    font-size: 40px;
 }
  /* fivepage 서브 콘텐츠 article  */
@@ -318,7 +311,8 @@ header{
    color: #1e1e1e;
    opacity: 1;
    font-size: 40px;
-   width: 211px;
+   max-width: 211px;
+   width: 100%;
 }
 
 .small-news{
@@ -328,6 +322,7 @@ header{
 }
 
 .black-pass{
+   position: relative;
    display: inline-block;
    background: 0% 0% no-repeat padding-box;
    padding: 2% 0;
@@ -350,11 +345,13 @@ header{
    width: 50%;
 }
 
-.info-list{
+.info-list{  /* absolute relative 고려해서 해결*/
+   position: absolute;
    display: inline-block;  
    letter-spacing: 0.8px;
    width: 84px;
    text-align: right;
+   top: 15px;
 }
 
 /* fivepage 서브 콘텐츠 section  */
@@ -367,7 +364,8 @@ header{
 
 .madang-line{
    border-bottom: #184b9f solid 2px;
-   width: 1060px;
+   max-width: 1060px;
+   width: 100%;
    opacity: 1;
    padding-bottom: 30px;
 }
@@ -392,9 +390,9 @@ header{
    margin-top: 8px;
 }
 
-.image-main-madang{
-   position: absolute;  
-   width: 1060px; 
+.image-main-madang{  
+   max-width: 1060px;
+   width: 100%; 
 }
 
 .image-main-madang img{  
@@ -402,8 +400,50 @@ header{
 }
 
 .madang-last{
+   display: flex;
+   justify-content: space-between;
    margin-top: 30px;
-   border-bottom: #184b9f solid 2px;
+   border-top: #184b9f solid 2px;
+   padding-top: 39px;
+}
+
+.pre-left-button{
+   display: flex;
+
+}
+
+.next-right-button{
+   display: flex;
+}
+
+.madang-pre-button{
+   border-radius: 50%;
+   width: 42px;
+   height: 42px;
+   border: 1px solid black;
+   padding-top: 6px;
+   margin-top: -10px;
+   margin-right: 20px;
+}
+
+.madang-pre-button img{  
+   margin: 25%; 
+   width: 50%;
+}
+
+.madang-next-button{
+   border-radius: 50%;
+   width: 42px;
+   height: 42px;
+   border: 1px solid black;
+   padding-top: 6px;
+   margin-top: -10px;
+   margin-left: 20px;
+}
+
+.madang-next-button img{
+   margin: 25%; 
+   width: 50%;
 }
 
 /* ----------------footer 부분----------------- */
