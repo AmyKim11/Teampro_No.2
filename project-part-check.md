@@ -31,7 +31,7 @@
 
 4 . 오O식
 
-* 진도율 : 50%
+* 진도율 : 100%
 * 맡은 부분 : main page(slider, resoft news, reference)
 
 |날짜|진행사항|특이사항|
