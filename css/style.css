@@ -830,7 +830,6 @@ footer {
    max-width: 1440px;
    width: 100%;
    margin: 50px auto;
-   padding: 0 3% 0 3%;
 }
 
 .footer-ci {
@@ -998,6 +997,9 @@ footer {
    footer {
       top: 7700px;
    }
+   .footer-con-wrap{
+      padding: 0 3% 0 3%;
+   }
 
 }
 
@@ -1130,6 +1132,9 @@ footer {
    /* footer 부분 */
    footer {
       top: 7700px;
+   }
+   .footer-con-wrap{
+      padding: 0 3% 0 3%;
    }
 
    /* slider part */
