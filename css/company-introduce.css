@@ -5,6 +5,7 @@
     font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 /* ------------------header부분 ----------------*/
@@ -13,6 +14,7 @@ header {
     text-align: center;
     top: 0px;
     left: 0px;
+    position: fixed;
     width: 100%;
     height: 80px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -135,10 +137,21 @@ header {
     under-1,2는 살려야 함*/
 }
 
+
+
+/*.nav-text a:nth-of-type(2) li{
+     /* color: #184B9F;} */
+/*<- 첫번째 세번째 네번째 서브 담당자는 주석처리해야함*/
+
+/*.nav-text a:last-of-type li{
+     /* color: #184B9F;} */
+/*<-첫번째, 두번째 서브 담당자는 주석처리 해야함*/
+
+
 .hamburger-menu {
     position: absolute;
     top: 25px;
-    right: 20px;
+    right: 0;
     width: 32px;
     height: 32px;
     cursor: pointer;
@@ -207,6 +220,7 @@ header {
     width: 400px;
     top: 12px;
     right: 160px;
+
 }
 
 .hide-nav-texts a li {
@@ -221,35 +235,38 @@ header {
     display: none;
 }
 
-/* -----회사소개 그림부분----- */
+/* ------------------------------회사소개 그림부분------------------ */
 .intro {
+    margin-top: 82px;
     left: 0px;
     width: 100%;
     height: 300px;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.2);
 }
-
-.intro img {
-    width: 100%;
-    height: 300px;
-
-}
-
-.intro-text {
-    top: 130px;
-    left: 45%;
-    width: 148px;
-    height: 58px;
+.intro::before {
+    content: "";
+    background: url('../img/company-introduce/title.png');
+    background-position: center;
+    background-size: cover;
+    filter: brightness(70%);
     position: absolute;
-    text-align: center;
-    font: 40px bold;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.intro h1{
+    top: 130px;
+    text-align:center;
+    line-height:800px;
+    position:relative;
+    font: normal normal bold 40px/58px Noto Sans KR;
     letter-spacing: 0px;
     color: #FFFFFF;
-    opacity: 1;
+    z-index: 85;
 }
 
-/* -----REsoft 소개 부분----- */
+/* -------------------------REsoft 소개 부분---------------------- */
 #about-us {
     width: 100%;
     background-color: white;
@@ -301,10 +318,8 @@ header {
     display: inline;
 }
 
-/* -----연혁----- */
+/* -----------------------------------연혁----------------------------- */
 #history {
-    top: 1236px;
-    left: 0px;
     width: 100%;
     height: 1314px;
     background: #F9F9F9 0% 0% no-repeat padding-box;
@@ -387,7 +402,13 @@ header {
     margin-bottom: 50px;
 }
 
-/* ----조직도----- */
+.history-content div:last-child {
+    position: absolute;
+    top: 920px;
+
+}
+
+/* ----------------------------------조직도----------------------------- */
 #organization {
     width: 100%;
 }
@@ -514,10 +535,8 @@ any siblings*/
     letter-spacing: 0px;
 }
 
-/* -----특허&인증----- */
+/* --------------------------------특허&인증---------------------------- */
 #certification {
-    top: 3456px;
-    left: 0px;
     width: 100%;
     height: 1454px;
     background: #F9F9F9 0% 0% no-repeat padding-box;
@@ -540,7 +559,7 @@ any siblings*/
     margin-right: 0;
 }
 
-/* -----오시는길----- */
+/* ----------------------------------오시는길----------------------------- */
 #directions {
     width: 100%;
 }
@@ -559,18 +578,15 @@ any siblings*/
     height: 230px;
 }
 
-.contact-box hr {
-    color: #DBDBDB;
-    border: 0px;
-    border-top: 1px solid #DBDBDB;
-}
-
-.contact-box hr:nth-child(2) {
-    color: black;
-}
-
 .contact-text {
     height: 115px;
+    border: 0px;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.contact-text:last-child {
+    border: 0px;
+    border-bottom: 1px solid black;
 }
 
 .contact-text p {
@@ -596,7 +612,7 @@ any siblings*/
 
 footer {
     position: absolute;
-    top: 6254px;
+    top: 6200px;
     left: 0;
     width: 100%;
     height: 250px;
@@ -608,7 +624,6 @@ footer {
     max-width: 1440px;
     width: 100%;
     margin: 50px auto;
-    padding: 0 3% 0 3%;
 }
 
 .footer-ci {
@@ -648,6 +663,122 @@ footer {
 .footer-right-con {
     height: 50px;
     word-wrap: keep-all;
+}
+
+@media screen and (min-width:769px) and (max-width:1280px) {
+
+    .intro {
+        width: 100%;
+    }
+
+    .title {
+        margin-left: 140px;
+    }
+
+    #about-us {
+        width: 100%;
+    }
+
+    #about-us .about-box {
+        margin-left: 140px;
+        margin-right: 140px;
+        width: 80%;
+    }
+
+    /* ------연혁------- */
+    #history {
+        width: 100%;
+    }
+
+    .history-box {
+        margin-left: 140px;
+        width: 89%;
+    }
+
+    .history-content {
+        width: 57%;
+    }
+
+    .history-content div {
+        margin-bottom: 8%;
+    }
+
+    /* ----------조직도------ */
+    #organization {
+        width: 100%;
+    }
+
+    .tree {
+        margin-left: 390px;
+        width: 560px;
+        height: 1156px;
+    }
+
+    .org-li {
+        padding-left: 0;
+    }
+
+    .org-li:nth-child(n+3) {
+        padding-top: 40px;
+    }
+
+    .org-li::before {
+        right: 50%;
+    }
+
+    .org-li :first-child::after {
+        left: 35%;
+    }
+
+    .org-li:nth-child(2)::before {
+        border-right: 1px solid #707070;
+    }
+
+    .org-li:nth-child(n+3)::before,
+    .org-li:nth-child(n+3)::after {
+        border: 0 none;
+    }
+
+    .org-li:nth-child(2)::after {
+        border: 0 none;
+    }
+
+    .org-li:nth-child(2n) {
+        padding-right: 0;
+    }
+
+    .org-li:nth-child(odd) {
+        padding-right: 80px;
+    }
+
+    /* -----특허 -------*/
+    .certification-box {
+        margin-left: 150px;
+    }
+
+    /* ------오시는길------ */
+    #map {
+        width: 1000px;
+        margin-top: 50px;
+        margin-left: 140px;
+    }
+
+    .contact-box {
+        width: 1000px;
+        margin-left: 140px;
+    }
+
+    .contact-text p:first-child {
+        margin-left: 0;
+    }
+    /* --------------footer-------------- */
+    footer {
+        top: 6800px;
+    }
+
+    .footer-con-wrap {
+        padding: 0 3% 0 3%;
+    }
 }
 
 /* 반응형 - 해상도 (941px~1024이하일때) */
@@ -698,8 +829,7 @@ footer {
     .hide-nav-flex-wrap {
         top: 46px;
     }
-
-    /* footer */
+    /* -----footer --------*/
     footer {
         top: 5643px;
         height: 331px;
@@ -721,6 +851,44 @@ footer {
 
 /* 해상도 767이하 */
 @media (max-width:767px) {
+    /* ----------------------회사소개부분-------------------- */
+    #about-us{
+        width: 100%;
+    }
+    .title{
+        margin-left: 32px;
+    }
+    #about-us .about-box{
+        width: 90%;
+        margin-left: 36px;
+    }
+    .about-box-text p:first-child{
+        line-height: 50px;
+        width: 30%;
+    }
+    .about-box-text p:last-child{
+        width: 60%;
+    }
+    /* ---------------연혁부분----------------------- */
+    #history{
+        height: 1494px;
+    }
+    .history-box{
+        margin-left: 36px;
+    }
+    .history-content{
+        left: 250px;
+        height: 1086px;
+    }
+    .history-content div{
+        width: 50%;
+        margin-bottom: 60px;
+    }
+    .history-content div:last-child {
+        top: 1100px;
+    }
+
+
 
     /* ci logo 부분 */
     .ci-logo {
