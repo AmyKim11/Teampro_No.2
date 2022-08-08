@@ -212,84 +212,14 @@ header{
    display: none;
 }
 
-/* 반응형 - 해상도 (941px~1024이하일때) */
 
-@media screen and (min-width:941px) and (max-width:1280px) {
-   /* nav 부분 */
-   .header-con-wrap{
-      max-width: 1024px;
-   }
-
-   /* .hamburger-menu{
-      right: 20px;
-   } */
-  
-   /* footer */
-   footer{
-      top: 5643px;
-   }
-
-}
-
-/* 반응형 - 해상도 940px 이하 */
-@media (max-width:940px) {
-   /* nav  */
-   .header-con-wrap{
-      max-width: 1024px;
-   }
-   .header-con-wrap nav{
-      display: none;
-   }
-
-   .hamburger-menu{
-      right: 20px;
-   }
-
-   .small-size-nav-wrap{
-      position: relative;
-      width: 100%;
-      height: 30px;
-      right: 0;
-      display: block;
-      border-bottom: #F8F8F8 1px solid;
-   }
-
-   .slide-nav-text{
-      position: absolute;
-      width: 400px;
-      right: 160px;
-   }   
-   .hide-nav-flex-wrap{
-      top: 46px;
-   }
-
-
-}
-
-/* 해상도 767이하 */
-@media (max-width:768px) {
-   /* ci logo 부분 */
-   .ci-logo{
-      padding-left: 10%;
-   }
-   /* nav 부분 */
-   .slide-nav-text,
-   .hide-nav-flex-wrap{
-      right: 0;
-      margin: 0 10%;
-   }
-
-   .hide-nav-texts{
-      height: 220px;
-   }
-
-}
 /***************nav**************/
 
 
 .head-wrap img{
    margin-top: 80px;
-    width: 1920px;
+   max-width: 1920px;
+   width: 100%;
 }
 
 .head-wrap p {
@@ -335,6 +265,7 @@ header{
     top: 280px;
     left: 240px;
     width: 1440px;
+    max-width: 1440px;
     height: 100%;
     display: flex;
    
@@ -345,7 +276,8 @@ header{
    position: relative;
    top: 280px;
    left: 240px;
-   width: 1440px;
+   width: 100%;
+   max-width: 1440px;
    height: 100%;
    display: flex;
   
@@ -581,17 +513,11 @@ header{
 
 
 
-
-
-
-
-
-
 /* ----------------footer 부분----------------- */
 
 footer{
-   position: relative;
-   top: 350px;
+   position: relative; 
+   top: 400px;
    left: 0;
    width: 100%;
    height: 250px;
@@ -600,10 +526,12 @@ footer{
 }
 
 .footer-con-wrap{
+   position: absolute; /*<-absolute 추가해 주시고*/
+   left: 0;/*<-left랑 right 추가 해주세요*/
+   right: 0;
+   margin: 50px auto;
    max-width: 1440px;
    width: 100%;
-   margin: 50px auto;
-   padding: 0 3% 0 3%;
 }
 
 .footer-ci{
@@ -645,9 +573,17 @@ footer{
 }
 
 
-/* 반응형 - 해상도 (768px~1024이하일때) */
+/* 반응형 - 해상도 (941px~1024이하일때) */
 
-@media screen and (min-width:941px) and (max-width:1024px) {
+@media screen and (min-width:941px) and (max-width:1280px) {
+   /* nav 부분 */
+   .header-con-wrap{
+      max-width: 1024px;
+   }
+
+   /* .hamburger-menu{
+      right: 20px;
+   } */
   
    /* footer */
    footer{
@@ -658,28 +594,41 @@ footer{
 
 /* 반응형 - 해상도 940px 이하 */
 @media (max-width:940px) {
-
-   /* footer */
-   footer{
-      top: 5643px;
-      height: 331px;
+   /* nav  */
+   .header-con-wrap{
+      max-width: 1024px;
+   }
+   .header-con-wrap nav{
+      display: none;
    }
 
-   .footer-con-wrap{
-      padding: 0 5%;
+   .hamburger-menu{
+      right: 20px;
    }
 
-   .footer-text-wrap{
-      flex-direction: column;
+   .small-size-nav-wrap{
+      position: relative;
+      width: 100%;
+      height: 30px;
+      right: 0;
+      display: block;
+      border-bottom: #F8F8F8 1px solid;
    }
 
-   .footer-left-con{
-      margin-bottom: 30px;
+   .slide-nav-text{
+      position: absolute;
+      width: 400px;
+      right: 160px;
+   }   
+   .hide-nav-flex-wrap{
+      top: 46px;
    }
+
+
 }
 
 /* 해상도 767이하 */
-@media (max-width:767px) {
+@media (max-width:768px) {
    /* ci logo 부분 */
    .ci-logo{
       padding-left: 10%;
