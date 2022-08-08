@@ -325,9 +325,18 @@ header{
    width: 130px;
 }
 
-.black-pass :hover{
-   background-color:#184b9f;
+.black-pass:visited{
+   color: #1e1e1e;
 }
+
+.black-pass :hover > .info-pass{
+   background-color: #184b9f; 
+}
+
+.black-pass :hover > .info-list{
+   color: #184b9f;
+}
+
 
 .info-pass{
    display: inline-block;
@@ -351,6 +360,7 @@ header{
    width: 84px;
    text-align: right;
    top: 15px;
+   color: #1E1E1E;
 }
 
 /* fivepage 서브 콘텐츠 section  */
@@ -408,19 +418,37 @@ header{
 
 .pre-left-button{
    display: flex;
-
+  
 }
 
-.pre-left-button :hover{
+.pre-left-button:hover > .madang-lee{
+   color: #184b9f;
+}
+
+.pre-left-button:hover > .madang-pre-button{
    background-color: #184b9f;
+   border-color: #184b9f;
+}
+
+.pre-left-button:hover > .madang-pre-button img{
+   filter: invert(100%);
 }
 
 .next-right-button{
    display: flex;
 }
 
-.next-right-button :hover{
+.next-right-button:hover > .madang-da{
+   color: #184b9f;
+}
+
+.next-right-button:hover> .madang-next-button{
    background-color: #184b9f;
+   border-color: #184b9f;
+}
+
+.next-right-button:hover> .madang-next-button img{
+   filter: invert(100%);
 }
 
 .madang-pre-button{
@@ -452,6 +480,7 @@ header{
    margin: 25%; 
    width: 50%;
 }
+
 
 /* ----------------footer 부분----------------- */
 
