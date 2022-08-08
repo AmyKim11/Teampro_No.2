@@ -321,6 +321,7 @@ header {
 .news_item {
    width: 100%;
    display: flex;
+   justify-content: space-between;
 }
 
 .news_item li {
@@ -347,9 +348,10 @@ header {
 }
 
 #item_seperator {
+   /* display: none; */
    border-left: 2px solid rgba(218, 213, 213, 0.5);
-   margin-left: 39px;
-   margin-right: 39px;
+   /* margin-left: 39px; */
+   /* margin-right: 39px; */
 }
 
 .item_img_wrap {
@@ -779,7 +781,7 @@ header {
 
 .refer_img_wrap{
    padding: 20px 20px 0 20px;
-   width: 1480px;
+   max-width: 1480px;
    border-top: 1px solid black;
 }
 
