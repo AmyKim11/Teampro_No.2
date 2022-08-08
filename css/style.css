@@ -238,7 +238,6 @@ header {
 
 .para_second {
    top: 628px;
-   /* left: 240px; */
    width: 650px;
    height: 52px;
    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 18px/26px var(--unnamed-font-family-noto-sans-kr);
@@ -348,10 +347,7 @@ header {
 }
 
 #item_seperator {
-   /* display: none; */
    border-left: 2px solid rgba(218, 213, 213, 0.5);
-   /* margin-left: 39px; */
-   /* margin-right: 39px; */
 }
 
 .item_img_wrap {
