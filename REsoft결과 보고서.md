@@ -28,7 +28,7 @@
    - 맡은 부분 : main page(slider, resoft news, reference)
    
    - 다르게 한 부분 : 
-      - main page 의 슬라이더 밑 '리소프트의 새로운 소식' 부분에 마우스 hover시 이미지 확대되는 속도를 더 빠르게 
+      - main page 의 슬라이더 밑 '리소프트의 새로운 소식' 부분에 마우스 hover시 이미지 확대되는 속도를 더 빠르게 제작
 
 ### 5. 이름 : 이승연
    - 맡은 부분 : 
