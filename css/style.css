@@ -816,7 +816,7 @@ header {
 /* ----------------footer 부분----------------- */
 
 footer {
-   position: absolute;
+   position: relative;
    top: 4879px;
    left: 0;
    width: 100%;
@@ -826,6 +826,9 @@ footer {
 }
 
 .footer-con-wrap {
+   position: absolute;
+   left: 0;
+   right: 0;
    max-width: 1440px;
    width: 100%;
    margin: 50px auto;
@@ -997,7 +1000,7 @@ footer {
       top: 7700px;
    }
    .footer-con-wrap{
-      padding: 0 3% 0 3%;
+      width: 94%;
    }
 
 }
@@ -1034,7 +1037,7 @@ footer {
       height: 331px;
    }
    .footer-con-wrap {
-      padding: 0 5%;
+      width: 94%;
    }
    .footer-text-wrap {
       flex-direction: column;
@@ -1132,7 +1135,7 @@ footer {
       top: 7700px;
    }
    .footer-con-wrap{
-      padding: 0 3% 0 3%;
+      width: 94%;
    }
 
    /* slider part */

@@ -1,8 +1,8 @@
 /* ----------------footer 부분----------------- */
 
 footer{
-   position: absolute;
-   top: 4879px;
+   position: relative;
+   top: 1200px; /*<- 임의로 수정하셔도 됩니다.*/
    left: 0;
    width: 100%;
    height: 250px;
@@ -11,6 +11,9 @@ footer{
 }
 
 .footer-con-wrap{
+   position: absolute;
+   left: 0;
+   right: 0;
    max-width: 1440px;
    width: 100%;
    margin: 50px auto;
@@ -61,10 +64,10 @@ footer{
   
    /* footer */
    footer{
-      top: 5643px;
+      top: 5643px; /*<-임의로 수정하셔도 됩니다*/
    }
    .footer-con-wrap{
-      padding: 0 3% 0 3%;
+      width: 94%;
    }
 
 }
@@ -74,12 +77,12 @@ footer{
 
    /* footer */
    footer{
-      top: 5643px;
+      top: 5643px;  /*<-임의로 수정하셔도 됩니다*/
       height: 331px;
    }
 
    .footer-con-wrap{
-      padding: 0 5%;
+      width: 94%;
    }
 
    .footer-text-wrap{
@@ -99,7 +102,7 @@ footer{
    }
    /* footer */
    .footer-con-wrap{
-      padding: 0 3% 0 3%;
+      width: 94%;
    }
 
 }
