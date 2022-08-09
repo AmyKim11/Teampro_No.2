@@ -281,6 +281,7 @@ header{
 
 .info-madang-ui{
    background: rgba(0, 0, 0, 0.3) url('../img/infomadang/rectan64.png') 0% 0% no-repeat;
+   background-size: cover;
    background-blend-mode: darken;
    border: 1px solid #707070;  
 }
@@ -330,7 +331,8 @@ header{
 }
 
 .black-pass :hover > .info-pass{
-   background-color: #184b9f; 
+   background-color: #184b9f;
+   transition: .2s; 
 }
 
 .black-pass :hover > .info-list{
@@ -367,8 +369,10 @@ header{
 
 .info-main-text{
    position: relative;
-   margin-top: 134px;
+   margin-top: 120px;
    margin-left: 137px;
+   max-width: 1060px;
+   width: 100%;
 }
 
 .madang-line{
@@ -406,6 +410,8 @@ header{
 
 .image-main-madang img{  
    margin-top: 30px;
+   max-width: 1060px;
+   width: 100%;
 }
 
 .madang-last{
@@ -428,6 +434,7 @@ header{
 .pre-left-button:hover > .madang-pre-button{
    background-color: #184b9f;
    border-color: #184b9f;
+   transition: .3s;
 }
 
 .pre-left-button:hover > .madang-pre-button img{
@@ -445,6 +452,7 @@ header{
 .next-right-button:hover> .madang-next-button{
    background-color: #184b9f;
    border-color: #184b9f;
+   transition: .3s;
 }
 
 .next-right-button:hover> .madang-next-button img{
@@ -481,12 +489,26 @@ header{
    width: 50%;
 }
 
+/* 반응형 - 해상도 (1280px이하일때) */
+
+   /* article */
+@media (max-width:1280px) {
+   .all-madang{
+      display: block;
+      margin: 0;
+      justify-content: center;
+   }
+   footer{
+      top: 2320px !important;
+   }
+}
+
 
 /* ----------------footer 부분----------------- */
 
 footer{
    position: absolute;
-   top: 2358px;
+   top: 2320px;
    left: 0;
    width: 100%;
    height: 250px;
