@@ -2,7 +2,7 @@
 
 1 . 김O민
 
-* 진도율 : 85%
+* 진도율 : 97%
 * 맡은 부분 : main page nav, project, service and footer
 
 |날짜|진행사항|특이사항|
