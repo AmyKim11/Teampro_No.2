@@ -10,17 +10,21 @@
    	               &darr;
       ![header-2](./img/reportimg/header-2.png)
 
+  * project, service 부분
+      * 왼쪽 오른쪽 부분 콘텐츠 나눠서 fadeInLeft, fadeInRight 애니메이션 추가.  
+
    * service 부분
       * 해상도가 줄어들때 안의 박스들도 같이 줄어들게 width 값 조절함.  
       ![service-1](./img/reportimg/service-1.png)
 
 ### 2. 이름 : 권기찬
-   - 맡은 부분 : 
+   - 맡은 부분 : sub page  "정보마당" 
    
-   - 다르게 한 부분:
+   - 다르게 한 부분: 
+     -  네비게이션 밑 이미지 부분에 호버 2초이후 링크가 클릭이 되는 기능 삭제
 
 ### 3. 이름 : 김효민
-   - 맡은 부분 : 
+   - 맡은 부분 : sub page "회사소개"
    
    - 다르게 한 부분:
 
