@@ -1,45 +1,36 @@
 $('.carousel').carousel({
     interval : 3000
-})
+});
 
-var slide_cont_status = 0;
-$('.pauseplay_img').click(function(){
+let slide_cont_status = 0;
+const slider = $('#slider_item');
+const switch_button_time = 100;
+const img_path = "./img/slider/"
+const pause_button = $('.pauseplay_img');
+
+pause_button.click(switch_playpause);
+
+$('.preview_button').click(switch_playpause);
+
+$('.next_button').click(switch_playpause);
+
+function switch_playpause(){
+    
     if(slide_cont_status==0){
-        $('#slider_item').carousel('pause');
-        $('.pauseplay_img').fadeOut(100, function(){
-            $('.pauseplay_img').attr('src','./img/slider/play.svg');
-            $('.pauseplay_img').fadeIn(100);
-        });
-        
-        slide_cont_status = 1;
+        slider.carousel('pause');
+        pause_button.fadeOut(switch_button_time, function(){
+        pause_button.attr('src', img_path+'play.svg');
+        pause_button.fadeIn(switch_button_time);
+        })
+
+        slide_cont_status=1;
     }else if(slide_cont_status==1){
-        $('#slider_item').carousel('cycle');
-        $('.pauseplay_img').fadeOut(100, function(){
-            $('.pauseplay_img').attr('src','./img/slider/pause.svg');
-            $('.pauseplay_img').fadeIn(100);
+        slider.carousel('cycle');
+        pause_button.fadeOut(switch_button_time, function(){
+        pause_button.attr('src', img_path+'pause.svg');
+        pause_button.fadeIn(switch_button_time);
         })
-        slide_cont_status = 0;
-    }
-})
 
-$('.preview_button').click(function(){
-    if(slide_cont_status==1){
-        $('#slider_item').carousel('cycle');
-        $('.pauseplay_img').fadeOut(100, function(){
-            $('.pauseplay_img').attr('src','./img/slider/pause.svg');
-            $('.pauseplay_img').fadeIn(100);
-        })
-        slide_cont_status = 0;
+        slide_cont_status=0;
     }
-})
-
-$('.next_button').click(function(){
-    if(slide_cont_status==1){
-        $('#slider_item').carousel('cycle');
-        $('.pauseplay_img').fadeOut(100, function(){
-            $('.pauseplay_img').attr('src','./img/slider/pause.svg');
-            $('.pauseplay_img').fadeIn(100);
-        })
-        slide_cont_status = 0;
-    }
-})
+};
