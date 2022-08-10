@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
 *{
    box-sizing: border-box;
    margin: 0;
@@ -83,9 +82,9 @@ header{
 .nav-text li:hover{
    color: #184B9F;
 }
-.nav-text a:first-of-type li:after,  /*<- 두번째, 세번째, 네번째 서브 해당되는 사람이면 살려야함*/
-.nav-text a:nth-of-type(2) li:after /*<- 첫번째, 세번째, 마지막 서브해당되는 사람이면 살려야 함*/
-{ /*<- 첫번째, 두번째 해당되는 서브만 살림*/
+/* .nav-text a:first-of-type li:after, */ /*<- 두번째, 세번째, 네번째 서브 해당되는 사람이면 살려야함*/
+.nav-text a:nth-of-type(2) li:after, /*<- 첫번째, 세번째, 마지막 서브해당되는 사람이면 살려야 함*/
+.nav-text a:last-of-type li:after{ /*<- 첫번째, 두번째 해당되는 서브만 살림*/
    display:block;
    margin-top: 3px;
    content: '';
@@ -97,13 +96,19 @@ header{
    transform-origin: 0% 50%;
 }
 
-.nav-text a:first-of-type li:hover:after, /*위와 같은 규칙*/
-.nav-text a:nth-of-type(2) li:hover:after
-{
+/*.nav-text a:first-of-type li:hover:after,*/ /*위와 같은 규칙*/
+.nav-text a:nth-of-type(2) li:hover:after,
+.nav-text a:last-of-type li:hover:after{
    transform: scaleX(1);
 }
 
 
+.nav-text a:first-of-type li{
+   /* position: absolute;
+   top: 26px;
+   left: 1198px; */
+   color: #184B9F; /*<- 두번째, 세번째, 네번째 서브 해당되는 사람은 주석처리 해야 함*/
+}
 
 .nav-text .underline{
    margin-top: 3px;
@@ -113,11 +118,15 @@ header{
    border-radius: 3px; 
 }
 
-.under-1{
+/*.under-1{
     visibility: hidden;  
-}
+}*/
 .nav-text .under-2{
    display: none; /*<-두번째 서브 페이지는 주석처리 하고, 나머지 1이랑3은 살림*/
+}
+.nav-text .under-3{
+   display: none;/*<-세번째,네번째(마지막) 서브 페이지는 주석처리 함 위의
+   under-1,2는 살려야 함*/
 }
 
 
@@ -125,8 +134,8 @@ header{
 /*.nav-text a:nth-of-type(2) li{
     /* color: #184B9F;} */ /*<- 첫번째 세번째 네번째 서브 담당자는 주석처리해야함*/
 
-.nav-text a:last-of-type li{
-     color: #184B9F;}  /*<-첫번째, 두번째 서브 담당자는 주석처리 해야함*/
+/*.nav-text a:last-of-type li{
+    /* color: #184B9F;} */ /*<-첫번째, 두번째 서브 담당자는 주석처리 해야함*/
 
 
 .hamburger-menu{
@@ -212,37 +221,133 @@ header{
    display: none;
 }
 
+/* 반응형 - 해상도 (941px~1024이하일때) */
 
-/***************nav**************/
+@media screen and (min-width:941px) and (max-width:1280px) {
+   /* nav 부분 */
+   .header-con-wrap{
+      max-width: 1024px;
+   }
 
+   /* .hamburger-menu{
+      right: 20px;
+   } */
+  
+   /* footer */
+   footer{
+      top: 5643px;
+   }
 
-.head-wrap img{
-   margin-top: 80px;
-   max-width: 1920px;
-   width: 100%;
 }
 
-.head-wrap p {
-   position: absolute;
-   top: 201px;
+/* 반응형 - 해상도 940px 이하 */
+@media (max-width:940px) {
+   /* nav  */
+   .header-con-wrap{
+      max-width: 1024px;
+   }
+   .header-con-wrap nav{
+      display: none;
+   }
+
+   .hamburger-menu{
+      right: 20px;
+   }
+
+   .small-size-nav-wrap{
+      position: relative;
+      width: 100%;
+      height: 30px;
+      right: 0;
+      display: block;
+      border-bottom: #F8F8F8 1px solid;
+   }
+
+   .slide-nav-text{
+      position: absolute;
+      width: 400px;
+      right: 160px;
+   }   
+   .hide-nav-flex-wrap{
+      top: 46px;
+   }
+
+
+}
+
+/* 해상도 767이하 */
+@media (max-width:768px) {
+   /* ci logo 부분 */
+   .ci-logo{
+      padding-left: 10%;
+   }
+   /* nav 부분 */
+   .slide-nav-text,
+   .hide-nav-flex-wrap{
+      right: 0;
+      margin: 0 10%;
+   }
+
+   .hide-nav-texts{
+      height: 220px;
+   }
+
+}
+
+/***************nav**************/
+.head-wrap {
+    position: relative;
+    width: 100%;
+    height: 300px;
+   
+    
+}
+.head-wrap-img{
+    background-image: url(/img/headwarp.png);
+    width: 100%;
+    height: 300px;
+
+}
+.head-wrap p{
+    padding: 5px 10px;
+	color: white;
+    font-size:40px;
+    font-weight: 500;
+	text-align: center;
+	position: absolute;
+	top: 63%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+
+}
+/*
+.nav p {
+  display: block;
+  z-index: 9999;
+  margin: 0 auto;
    left: 886px;
    width: 148px;
    height: 58px;
    font-weight: 500;
-   color:white;
+   color: red;
+   background-color: red;
    font-size:40px;
 }
 
 
 /*****************content /REsoft 소식/  *************/
+
+
 .content-text{
     position: absolute;
-    top: 480px;
-    left: 240px;
+    top: 430px;
+    left: 50% ;
+    margin-left: -710px;
     width: 211px;
     height: 58px;
     text-align: left;
     letter-spacing: 0;
+   
 }
 
 .content-text p:nth-child(1){
@@ -263,12 +368,11 @@ header{
 .content {
     position: relative;
     top: 280px;
-    left: 240px;
     width: 1440px;
     max-width: 1440px;
     height: 100%;
     display: flex;
-   
+    margin: 0 auto;
 }
 
 
@@ -281,6 +385,7 @@ header{
    height: 100%;
    display: flex;
   
+  
 }
 
 /****** 메인 이미지+텍스트 크기 **********/
@@ -291,7 +396,6 @@ header{
    height: 430px;
    margin-right:80px;
    margin-bottom: 110px;
-
 }
 
 
@@ -491,7 +595,8 @@ header{
 .a{
       position: relative;
       top:300px;
-      left: 860px;
+      left: 50%;
+      margin-left:-110px;
       width: 200px;
       height: 73px;
       line-height: 73px; 
@@ -517,7 +622,7 @@ header{
 
 footer{
    position: relative; 
-   top: 400px;
+   top: 545px;
    left: 0;
    width: 100%;
    height: 250px;
