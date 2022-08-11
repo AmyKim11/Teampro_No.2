@@ -695,6 +695,10 @@ footer {
 
 @media screen and (min-width:769px) and (max-width:1280px) {
 
+    .hamburger-menu{
+        right: 20px;
+    }
+
     .intro {
         width: 100%;
     }
@@ -815,6 +819,9 @@ footer {
 }
 
 @media screen and (min-width:769px) and (max-width:1200px) {
+    .hamburger-menu{
+        right: 20px;
+    }
     .certification-box{
         width: 534px;
     }
@@ -848,7 +855,9 @@ footer {
     .header-con-wrap nav {
         display: none;
     }
-
+    .hamburger-menu{
+        right: 20px;
+    }
 
     .small-size-nav-wrap {
         position: relative;
@@ -869,26 +878,29 @@ footer {
         top: 46px;
     }
     /* -----footer --------*/
-        footer {
-            height: 331px;
-        }
-    
-        .footer-con-wrap {
-            width: 94%;
-        }
-    
-        .footer-text-wrap {
-            flex-direction: column;
-        }
-    
-        .footer-left-con {
-            margin-bottom: 30px;
-        }
+    footer {
+        height: 331px;
+    }
+
+    .footer-con-wrap {
+        width: 94%;
+    }
+
+    .footer-text-wrap {
+        flex-direction: column;
+    }
+
+    .footer-left-con {
+        margin-bottom: 30px;
+    }
 
 }
 
 /* 해상도 767이하 */
 @media (max-width:768px) {
+    .hamburger-menu{
+        right: 20px;
+    }
     /* ----------------------회사소개부분-------------------- */
     #about-us{
         width: 100%;
