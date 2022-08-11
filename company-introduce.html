@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resoft</title>
+    <!-- 페이지 css -->
     <link rel="stylesheet" href="./css/company-introduce.css">
+    <!-- 카카오맵 -->
     <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4b8ac5f2e5204d17b391881370e8eb0f"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- wowjs -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <script src="./js/wow.min.js"></script>
+    <script>
+	    new WOW().init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <div class="header-con-wrap">
@@ -19,12 +30,11 @@
                         <li>회사소개</li>
                         <div class="underline under-1"></div>
                     </a>
-                    <a href="#">
+                    <a href="./Ecoce.html">
                         <li>사업현황</li>
                         <div class="underline under-2"></div>
                     </a>
-    
-                    <a href="#">
+                    <a href="./REsoft-gichan.html">
                         <li>정보마당</li>
                         <div class="underline under-3"></div>
                     </a>
@@ -32,7 +42,6 @@
             </nav>
             <div class="hamburger-menu"></div>
         </div>
-    
         <div class="hide-nave">
             <div class="hide-nav-texts">
                 <div class="hide-nav-con-wrap">
@@ -41,41 +50,40 @@
                             <a href="./company-introduce.html">
                                 <li>회사소개</li>
                             </a>
-                            <a href="#">
+                            <a href="./Ecoce.html">
                                 <li>사업현황</li>
                             </a>
-                            <a href="#">
+                            <a href="./REsoft-gichan.html">
                                 <li>정보마당</li>
                             </a>
                         </ul>
                     </div>
                     <div class="hide-nav-flex-wrap">
-    
                         <ul class="slide-nav-text-1">
-                            <a href="#">
+                            <a href="./company-introduce.html#about-us">
                                 <li>REsoft소개</li>
                             </a>
-                            <a href="#">
+                            <a href="./company-introduce.html#history">
                                 <li>연혁</li>
                             </a>
-                            <a href="#">
+                            <a href="./company-introduce.html#organization">
                                 <li>조직도</li>
                             </a>
-                            <a href="#">
+                            <a href="./company-introduce.html#certification">
                                 <li>특허&인증</li>
                             </a>
-                            <a href="#">
+                            <a href="./company-introduce.html#directions">
                                 <li>오시는 길</li>
                             </a>
                         </ul>
                         <ul class="slide-nav-text-2">
-                            <a href="#">
+                            <a href="./Ecoce.html#ecoce-wrap">
                                 <li>ECOCE</li>
                             </a>
-                            <a href="#">
+                            <a href="./Ecoce.html#moado">
                                 <li>moaDo</li>
                             </a>
-                            <a href="#">
+                            <a href="./Ecoce.html#ETC">
                                 <li>Etc</li>
                             </a>
                         </ul>
@@ -90,10 +98,7 @@
         </div>
     </header>
     <div class="intro">
-        <div class="intro-text">
-            <p>회사소개</p>
-        </div>
-        <img src="./img/company-introduce/title.png" alt="사진">
+        <h1>회사소개</h1>
     </div>
     <div id="about-us">
         <div class="title">
@@ -201,7 +206,7 @@
             <p>조직도</p>
             <p>ORGANIZATION</p>
         </div>
-        <div class="tree">
+        <div data-wow-duration="1s" data-wow-delay="0.3s" class="tree wow bounceIn">
             <li class="org-li li-left li-right">
                 <p class="org">대표이사</p>
                 <ul class="org-ul">
@@ -263,15 +268,15 @@
             <p>CERTIFICATION&PATENT</p>
         </div>
         <div class="certification-box">
-            <img src="https://via.placeholder.com/220x310" alt="">
-            <img src="https://via.placeholder.com/220x310" alt="">
-            <img src="https://via.placeholder.com/220x310" alt="">
-            <img src="https://via.placeholder.com/220x310" alt="">
-            <img src="https://via.placeholder.com/220x310" alt="">
-            <img src="https://via.placeholder.com/220x310" alt="">
-            <img src="https://via.placeholder.com/220x310" alt="">
-            <img src="https://via.placeholder.com/220x310" alt="">
-            <img src="https://via.placeholder.com/220x310" alt="">
+            <img src="./img/company-introduce/square.svg" alt="">
+            <img src="./img/company-introduce/square.svg" alt="">
+            <img src="./img/company-introduce/square.svg" alt="">
+            <img src="./img/company-introduce/square.svg" alt="">
+            <img src="./img/company-introduce/square.svg" alt="">
+            <img src="./img/company-introduce/square.svg" alt="">
+            <img src="./img/company-introduce/square.svg" alt="">
+            <img src="./img/company-introduce/square.svg" alt="">
+            <img src="./img/company-introduce/square.svg" alt="">
         </div>
     </div>
     <div id="directions">
@@ -285,12 +290,10 @@
                 <p>연락처</p>
                 <p>TELL. (053) 475-2110 FAX. (0504) 257-5966 E-MAIL. call@resoft.kr</p>
             </div>
-            <hr>
             <div class="contact-text">
                 <p>주소</p>
                 <p>(41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (주)리소프트</p>
             </div>
-            <hr>
         </div>
     </div>
     <footer>
@@ -313,5 +316,6 @@
         </div>
     </footer>
     <script src="./js/map.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

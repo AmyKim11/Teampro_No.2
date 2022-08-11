@@ -131,7 +131,7 @@ header{
 .hamburger-menu{
    position: absolute;
    top: 25px;
-   right: 20px;
+   right: 0;
    width: 32px;
    height: 32px;
    cursor: pointer;
@@ -144,6 +144,7 @@ header{
    left: 0px; */
    width: 100%;
    height: 263px;
+   display: none;
 }
 
 .hide-nav-texts{
@@ -210,32 +211,33 @@ header{
    display: none;
 }
 
-/* 반응형 - 해상도 (941px~1024이하일때) */
+/* 반응형 - 해상도 (769px~1280이하일때) */
 
-@media screen and (min-width:941px) and (max-width:1024px) {
+@media screen and (min-width:769px) and (max-width:1280px) {
    /* nav 부분 */
    .header-con-wrap{
-      max-width: 1024px;
+      max-width: 1280px;
    }
 
+   .hamburger-menu{
+      right: 20px;
+   }
   
-   /* footer */
-   footer{
-      top: 5643px;
-   }
-
 }
 
 /* 반응형 - 해상도 940px 이하 */
 @media (max-width:940px) {
-   /* nav  */
-   .header-con-wrap{
-      max-width: 1024px;
+    /* nav  */
+    .header-con-wrap {
+      max-width: 1280px;
    }
    .header-con-wrap nav{
       display: none;
    }
 
+   .hamburger-menu{
+      right: 20px;
+   }
 
    .small-size-nav-wrap{
       position: relative;
@@ -259,7 +261,7 @@ header{
 }
 
 /* 해상도 767이하 */
-@media (max-width:767px) {
+@media (max-width:768px) {
    /* ci logo 부분 */
    .ci-logo{
       padding-left: 10%;
@@ -275,19 +277,18 @@ header{
       height: 220px;
    }
 
+   .hamburger-menu{
+      right: 20px;
+   }
 }
 
 /* ----------------5page 부분----------------- */
 
 .info-madang-ui{
    background: rgba(0, 0, 0, 0.3) url('../img/infomadang/rectan64.png') 0% 0% no-repeat;
+   background-size: cover;
    background-blend-mode: darken;
-   background-size: cover; 
    border: 1px solid #707070;  
-}
-
-.info-madang-ui img{
-   width: 100%;  
 }
 
 .info-madang-text{
@@ -304,7 +305,7 @@ header{
    width: 100%;
    margin: 100px auto;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-between;/*space-evenly와는 다르게 딱 붙인다.*/
 }
 
 .resoft-news{
@@ -330,6 +331,20 @@ header{
    width: 130px;
 }
 
+.black-pass:visited{
+   color: #1e1e1e;
+}
+
+.black-pass :hover > .info-pass{
+   background-color: #184b9f;
+   transition: .2s; 
+}
+
+.black-pass :hover > .info-list{
+   color: #184b9f;
+}
+
+
 .info-pass{
    display: inline-block;
    background: #1e1e1e 0% 0% no-repeat padding-box;
@@ -352,14 +367,15 @@ header{
    width: 84px;
    text-align: right;
    top: 15px;
+   color: #1E1E1E;
 }
 
 /* fivepage 서브 콘텐츠 section  */
 
 .info-main-text{
-   position: relative;
-   margin-top: 134px;
-   margin-left: 137px;
+   margin-top: 120px;
+   max-width: 1060px;
+   width: 100%;
 }
 
 .madang-line{
@@ -397,6 +413,8 @@ header{
 
 .image-main-madang img{  
    margin-top: 30px;
+   max-width: 1060px;
+   width: 100%;
 }
 
 .madang-last{
@@ -409,11 +427,39 @@ header{
 
 .pre-left-button{
    display: flex;
+  
+}
 
+.pre-left-button:hover > .madang-lee{
+   color: #184b9f;
+}
+
+.pre-left-button:hover > .madang-pre-button{
+   background-color: #184b9f;
+   border-color: #184b9f;
+   transition: .3s;
+}
+
+.pre-left-button:hover > .madang-pre-button img{
+   filter: invert(100%);
 }
 
 .next-right-button{
    display: flex;
+}
+
+.next-right-button:hover > .madang-da{
+   color: #184b9f;
+}
+
+.next-right-button:hover> .madang-next-button{
+   background-color: #184b9f;
+   border-color: #184b9f;
+   transition: .3s;
+}
+
+.next-right-button:hover> .madang-next-button img{
+   filter: invert(100%);
 }
 
 .madang-pre-button{
@@ -446,11 +492,36 @@ header{
    width: 50%;
 }
 
+/* 반응형 - 해상도 (1280px이하일때) */
+
+   /* article */
+@media (max-width:1280px) {
+   .all-madang{
+      display: block;
+      margin: 0;
+      /* justify-content: center;  */
+   }
+   .article-news{
+     width: fit-content;
+     display: flex;
+     flex-direction: column;
+     margin: 3% auto;
+   }
+   .info-main-text{
+      margin: 120px auto;
+      width: 96%;
+   }
+   footer{
+      top: 120px !important;
+   }
+}
+
+
 /* ----------------footer 부분----------------- */
 
 footer{
-   position: absolute;
-   top: 2358px;
+   position:relative;
+   top: 100px;
    left: 0;
    width: 100%;
    height: 250px;
@@ -459,10 +530,12 @@ footer{
 }
 
 .footer-con-wrap{
+   position: absolute;
+   left: 0;
+   right: 0;
    max-width: 1440px;
    width: 100%;
    margin: 50px auto;
-   padding: 0 3% 0 3%;
 }
 
 .footer-ci{
@@ -506,17 +579,20 @@ footer{
 
 /* 반응형 - 해상도 (768px~1024이하일때) */
 
-@media screen and (min-width:941px) and (max-width:1024px) {
+@media screen and (min-width:769px) and (max-width:1280px) {
   
    /* footer */
    footer{
       top: 5643px;
    }
+   .footer-con-wrap{
+      width: 96%;
+   }
 
 }
 
 /* 반응형 - 해상도 940px 이하 */
-@media (max-width:940px) {
+@media (max-width:940px)  {
 
    /* footer */
    footer{
@@ -525,7 +601,7 @@ footer{
    }
 
    .footer-con-wrap{
-      padding: 0 5%;
+      width: 96%;
    }
 
    .footer-text-wrap{
@@ -538,20 +614,14 @@ footer{
 }
 
 /* 해상도 767이하 */
-@media (max-width:767px) {
+@media (max-width:768px) {
    /* ci logo 부분 */
    .ci-logo{
       padding-left: 10%;
    }
-   /* nav 부분 */
-   .slide-nav-text,
-   .hide-nav-flex-wrap{
-      right: 0;
-      margin: 0 10%;
-   }
-
-   .hide-nav-texts{
-      height: 220px;
+   /* footer */
+   .footer-con-wrap{
+      width: 96%;
    }
 
 }
