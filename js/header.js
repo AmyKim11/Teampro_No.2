@@ -1,18 +1,27 @@
 // header 스크롤시 배경 색 변화
+let bgColor = ["#FFFF","transparent"];
+let fontColor = ["#000000","#FFFF"];
+let filter = ["none", "invert(100%) sepia(100%) saturate(2%) hue-rotate(190deg) brightness(102%) contrast(101%)"];
+let bgUrl = ["url('./img/nav/hamburger_menu_black.svg')", "url('./img/nav/hamburger_menu.svg')"];
 $(document).ready(function(){
    $(window).scroll(function(){
-     var scroll = $(window).scrollTop();
+     const scroll = $(window).scrollTop();
      if (scroll > 1) {
-       $("header").css("background" , "#FFFF");
-       $(".nav-text li a").css("color" , "#000000");
-       $(".ci-logo img").css("filter" , "none");
-       $(".hamburger-menu").css("background-image" , "url('./img/nav/hamburger_menu_black.svg')");
+        changeStyle(bgColor[0], fontColor[0], filter[0], bgUrl[0]);
      }
      else{
-       $("header").css("background" , "transparent");
-       $(".nav-text li a").css("color" , "#FFFF");   
-       $(".ci-logo img").css("filter" , "invert(100%) sepia(100%) saturate(2%) hue-rotate(190deg) brightness(102%) contrast(101%)");
-       $(".hamburger-menu").css("background-image" , "url('./img/nav/hamburger_menu.svg')");
+      changeStyle(bgColor[1], fontColor[1], filter[1], bgUrl[1]);
      }
    })
  })
+
+ function changeStyle(bg, font, filter, bgImg){
+      let header = $("header");
+      let navText = $(".nav-text li a");
+      let ciImg =  $(".ci-logo img");
+      let backImg = $(".hamburger-menu");
+      header.css("background" , bg);
+      navText.css("color" , font);
+      ciImg.css("filter" , filter);
+      backImg.css("background-image" , bgImg);
+ }
