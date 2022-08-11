@@ -6,8 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resoft</title>
+    <!-- 페이지 css -->
     <link rel="stylesheet" href="./css/company-introduce.css">
+    <!-- 카카오맵 -->
     <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4b8ac5f2e5204d17b391881370e8eb0f"></script>
+    <!-- wowjs -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <script src="./js/wow.min.js"></script>
+    <script>
+	    new WOW().init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
@@ -203,7 +211,7 @@
             <p>조직도</p>
             <p>ORGANIZATION</p>
         </div>
-        <div class="tree">
+        <div data-wow-duration="1s" data-wow-delay="0.3s" class="tree wow bounceIn">
             <li class="org-li li-left li-right">
                 <p class="org">대표이사</p>
                 <ul class="org-ul">
