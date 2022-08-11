@@ -211,35 +211,33 @@ header{
    display: none;
 }
 
-/* 반응형 - 해상도 (941px~1280이하일때) */
+/* 반응형 - 해상도 (769px~1280이하일때) */
 
-@media screen and (min-width:941px) and (max-width:1280px) {
+@media screen and (min-width:769px) and (max-width:1280px) {
    /* nav 부분 */
    .header-con-wrap{
-      max-width: 1024px;
+      max-width: 1280px;
    }
 
    .hamburger-menu{
       right: 20px;
    }
   
-   /* footer */
-   footer{
-      top: 5643px;
-   }
-
 }
 
 /* 반응형 - 해상도 940px 이하 */
 @media (max-width:940px) {
-   /* nav  */
-   .header-con-wrap{
-      max-width: 1024px;
+    /* nav  */
+    .header-con-wrap {
+      max-width: 1280px;
    }
    .header-con-wrap nav{
       display: none;
    }
 
+   .hamburger-menu{
+      right: 20px;
+   }
 
    .small-size-nav-wrap{
       position: relative;
@@ -259,13 +257,11 @@ header{
       top: 46px;
    }
 
-   .hamburger-menu{
-      right: 20px;
-   }
+
 }
 
 /* 해상도 767이하 */
-@media (max-width:767px) {
+@media (max-width:768px) {
    /* ci logo 부분 */
    .ci-logo{
       padding-left: 10%;
@@ -284,7 +280,6 @@ header{
    .hamburger-menu{
       right: 20px;
    }
-
 }
 
 /* ----------------5page 부분----------------- */
