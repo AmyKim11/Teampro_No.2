@@ -164,6 +164,7 @@ header {
     left: 0px; */
     width: 100%;
     height: 263px;
+    display: none;
 }
 
 .hide-nav-texts {
@@ -273,8 +274,9 @@ header {
 }
 
 .title {
+    max-width: 1440px;
+    margin: auto;
     padding-top: 100px;
-    margin-left: 240px;
     font-size: 40px;
     font-weight: bold;
 }
@@ -286,8 +288,9 @@ header {
 }
 
 #about-us .about-box {
-    width: 1440px;
-    margin: 50px 240px 0 240px;
+    max-width: 1440px;
+    width: 90%;
+    margin: 50px auto;
     padding-bottom: 100px;
 }
 
@@ -327,12 +330,10 @@ header {
 }
 
 .history-box {
+    width: auto;
+    max-width: 1140px;
     margin-top: 50px;
-    margin-left: 540px;
-    margin-right: 240px;
-    top: 1470px;
-    left: 540px;
-    width: 1140px;
+    margin-left: 25%;
     height: 980px;
 }
 
@@ -349,7 +350,7 @@ header {
 }
 
 .history-content {
-    width: 710px;
+    width: 60%;
     top: -190.25px;
     left: 389px;
     border-left: 6px solid #C8C8C8;
@@ -414,7 +415,7 @@ header {
 }
 
 .tree {
-    margin-left: 260px;
+    margin: 100px auto;
     margin-bottom: 100px;
     width: 1400px;
     height: 532px;
@@ -477,6 +478,7 @@ any siblings*/
 /* 양쪽 선 제거 */
 .org-li:first-child::before,
 .org-li:last-child::after {
+    width: 90px;
     border: 0 none;
 }
 
@@ -544,13 +546,14 @@ any siblings*/
 }
 
 .certification-box {
-    margin-top: 50px;
+    margin: 50px auto;
     width: 990px;
     height: 1120px;
-    margin-left: 620px;
 }
 
 .certification-box img {
+    width: 220px;
+    height: 310px;
     margin-right: 160px;
     margin-bottom: 90px;
 }
@@ -565,16 +568,18 @@ any siblings*/
 }
 
 #map {
-    margin-top: 50px;
-    margin-left: 240px;
-    width: 1440px;
+    margin: 50px auto;
+    margin-bottom: 0;
+    width: auto;
+    max-width: 1440px;
     height: 680px;
 }
 
 .contact-box {
-    margin-left: 240px;
+    margin: auto;
     margin-bottom: 200px;
-    width: 1440px;
+    width: auto;
+    max-width: 1440px;
     height: 230px;
 }
 
@@ -611,8 +616,7 @@ any siblings*/
 /* ----------------footer 부분----------------- */
 
 footer {
-    position: absolute;
-    top: 6200px;
+    position: relative;
     left: 0;
     width: 100%;
     height: 250px;
@@ -621,6 +625,9 @@ footer {
 }
 
 .footer-con-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
     max-width: 1440px;
     width: 100%;
     margin: 50px auto;
@@ -665,6 +672,27 @@ footer {
     word-wrap: keep-all;
 }
 
+@media screen and (min-width:1281px) and (max-width:1500px) {
+    .tree{
+        width: 93%;
+    }
+    .org-li{
+        padding: 70px 1.1vw 0 1.1vw;
+    }
+    .history-content{
+        left: 30%;
+    }
+    .title{
+        margin-left: 5%;
+    }
+    .org-li :first-child::after {
+        left: 50%;
+    }
+    .org-li :last-child::before {
+        right: 50%;
+    }
+}
+
 @media screen and (min-width:769px) and (max-width:1280px) {
 
     .intro {
@@ -680,9 +708,14 @@ footer {
     }
 
     #about-us .about-box {
-        margin-left: 140px;
-        margin-right: 140px;
         width: 80%;
+    }
+    .about-box-text p:first-child{
+        width: 20%;
+    }
+
+    .about-box-text p:last-child{
+        width: 60%;
     }
 
     /* ------연혁------- */
@@ -692,10 +725,10 @@ footer {
 
     .history-box {
         margin-left: 140px;
-        width: 89%;
     }
 
     .history-content {
+        left: 40%;
         width: 57%;
     }
 
@@ -709,7 +742,6 @@ footer {
     }
 
     .tree {
-        margin-left: 390px;
         width: 560px;
         height: 1156px;
     }
@@ -752,36 +784,50 @@ footer {
     }
 
     /* -----특허 -------*/
-    .certification-box {
+    /* .certification-box {
         margin-left: 150px;
-    }
+    } */
 
     /* ------오시는길------ */
     #map {
-        width: 1000px;
         margin-top: 50px;
+        margin-right: 140px;
         margin-left: 140px;
     }
 
     .contact-box {
-        width: 1000px;
+        margin-right: 140px;
         margin-left: 140px;
     }
 
     .contact-text p:first-child {
         margin-left: 0;
+        width: 20%;
+    }
+    .contact-text p:last-child {
+        width: 77%;
+        line-height: normal;
     }
     /* --------------footer-------------- */
-    footer {
-        top: 6800px;
-    }
-
-    .footer-con-wrap {
-        padding: 0 3% 0 3%;
+    .footer-con-wrap{
+        width: 94%;
     }
 }
 
-/* 반응형 - 해상도 (941px~1024이하일때) */
+@media screen and (min-width:769px) and (max-width:1200px) {
+    .certification-box{
+        width: 534px;
+    }
+    .certification-box img:nth-child(3n){
+        display: none;
+    }
+    .certification-box img{
+        margin-right: 0;
+    }
+    .certification-box img:nth-child(3n+1){
+        margin-right: 90px;
+    }
+}
 
 @media screen and (min-width:941px) and (max-width:1024px) {
 
@@ -789,13 +835,6 @@ footer {
     .header-con-wrap {
         max-width: 1024px;
     }
-
-
-    /* footer */
-    footer {
-        top: 5643px;
-    }
-
 }
 
 /* 반응형 - 해상도 940px 이하 */
@@ -830,27 +869,26 @@ footer {
         top: 46px;
     }
     /* -----footer --------*/
-    footer {
-        top: 5643px;
-        height: 331px;
-    }
-
-    .footer-con-wrap {
-        padding: 0 5%;
-    }
-
-    .footer-text-wrap {
-        flex-direction: column;
-    }
-
-    .footer-left-con {
-        margin-bottom: 30px;
-    }
+        footer {
+            height: 331px;
+        }
+    
+        .footer-con-wrap {
+            width: 94%;
+        }
+    
+        .footer-text-wrap {
+            flex-direction: column;
+        }
+    
+        .footer-left-con {
+            margin-bottom: 30px;
+        }
 
 }
 
 /* 해상도 767이하 */
-@media (max-width:767px) {
+@media (max-width:768px) {
     /* ----------------------회사소개부분-------------------- */
     #about-us{
         width: 100%;
@@ -860,7 +898,6 @@ footer {
     }
     #about-us .about-box{
         width: 90%;
-        margin-left: 36px;
     }
     .about-box-text p:first-child{
         line-height: 50px;
@@ -877,24 +914,101 @@ footer {
         margin-left: 36px;
     }
     .history-content{
+        width: 60%;
         left: 250px;
         height: 1086px;
     }
     .history-content div{
-        width: 50%;
         margin-bottom: 60px;
     }
     .history-content div:last-child {
         top: 1100px;
     }
+    /* ----------------------조직도 부분-------------------------- */
+    .tree {
+        margin-top: 50px;
+        margin-left: 18%;
+        width: 560px;
+        height: 1156px;
+    }
 
+    .org-li {
+        padding-left: 0;
+    }
 
+    .org-li:nth-child(n+3) {
+        padding-top: 40px;
+    }
 
+    .org-li::before {
+        right: 50%;
+    }
+
+    .org-li :first-child::after {
+        left: 35%;
+    }
+
+    .org-li:nth-child(2)::before {
+        border-right: 1px solid #707070;
+    }
+
+    .org-li:nth-child(n+3)::before,
+    .org-li:nth-child(n+3)::after {
+        border: 0 none;
+    }
+
+    .org-li:nth-child(2)::after {
+        border: 0 none;
+    }
+
+    .org-li:nth-child(2n) {
+        padding-right: 0;
+    }
+
+    .org-li:nth-child(odd) {
+        padding-right: 80px;
+    }
+    /* --------------특허&인증 부분 --------------------*/
+    .certification-box{
+        width:545px;
+        margin-left: 16%;
+    }
+    .certification-box img{
+        margin-right: 0;
+    }
+    .certification-box img:nth-child(3n+1){
+        margin-right: 90px;
+    }
+    
+    .certification-box img:nth-child(3n){
+        display: none;
+    }
+    /* ------------------오시는길부분---------------- */
+    #map{
+        margin-left: 6%;
+        width: 90%;
+    }
+    .contact-box{
+        margin-left: 6%;
+        width: 90%;
+    }
+    .contact-text p:first-child{
+        width: 20%;
+        margin-left: 0;
+    }
+    .contact-text p:last-child{
+        width: 70%;
+        height: 100px;
+        line-height: normal;
+    }
     /* ci logo 부분 */
     .ci-logo {
         padding-left: 10%;
     }
-
+    /* footer */
+    .footer-con-wrap{
+        width: 94%;
+    }
     /* nav 부분 */
     .slide-nav-text,
     .hide-nav-flex-wrap {
