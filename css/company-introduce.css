@@ -333,7 +333,7 @@ header {
     width: auto;
     max-width: 1140px;
     margin-top: 50px;
-    margin-left: 25%;
+    margin: auto;
     height: 980px;
 }
 
