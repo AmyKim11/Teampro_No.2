@@ -1,5 +1,6 @@
 $('.carousel').carousel({
-    interval : 3000
+    interval : 3000,
+    // touch : true
 });
 
 let slide_cont_status = 0;
@@ -10,9 +11,9 @@ const pause_button = $('.pauseplay_img');
 
 pause_button.click(switch_playpause);
 
-$('.preview_button').click(switch_playpause);
+$('.preview_button').click(switch_button_img);
 
-$('.next_button').click(switch_playpause);
+$('.next_button').click(switch_button_img);
 
 function switch_playpause(){
     
@@ -34,3 +35,15 @@ function switch_playpause(){
         slide_cont_status=0;
     }
 };
+
+function switch_button_img(){
+    if(slide_cont_status==1){
+        slider.carousel('cycle');
+        pause_button.fadeOut(switch_button_time, function(){
+        pause_button.attr('src', img_path+'pause.svg');
+        pause_button.fadeIn(switch_button_time);
+        })
+
+        slide_cont_status=0;
+    }
+}
