@@ -415,7 +415,7 @@ header {
 }
 
 .tree {
-    margin: auto;
+    margin: 100px auto;
     margin-bottom: 100px;
     width: 1400px;
     height: 532px;
@@ -672,6 +672,27 @@ footer {
     word-wrap: keep-all;
 }
 
+@media screen and (min-width:1281px) and (max-width:1500px) {
+    .tree{
+        width: 93%;
+    }
+    .org-li{
+        padding: 70px 1.1vw 0 1.1vw;
+    }
+    .history-content{
+        left: 30%;
+    }
+    .title{
+        margin-left: 5%;
+    }
+    .org-li :first-child::after {
+        left: 50%;
+    }
+    .org-li :last-child::before {
+        right: 50%;
+    }
+}
+
 @media screen and (min-width:769px) and (max-width:1280px) {
 
     .intro {
@@ -763,9 +784,9 @@ footer {
     }
 
     /* -----특허 -------*/
-    .certification-box {
+    /* .certification-box {
         margin-left: 150px;
-    }
+    } */
 
     /* ------오시는길------ */
     #map {
@@ -793,7 +814,20 @@ footer {
     }
 }
 
-/* 반응형 - 해상도 (941px~1024이하일때) */
+@media screen and (min-width:769px) and (max-width:1200px) {
+    .certification-box{
+        width: 534px;
+    }
+    .certification-box img:nth-child(3n){
+        display: none;
+    }
+    .certification-box img{
+        margin-right: 0;
+    }
+    .certification-box img:nth-child(3n+1){
+        margin-right: 90px;
+    }
+}
 
 @media screen and (min-width:941px) and (max-width:1024px) {
 
@@ -936,7 +970,7 @@ footer {
     }
     /* --------------특허&인증 부분 --------------------*/
     .certification-box{
-        width: 75%;
+        width:545px;
         margin-left: 16%;
     }
     .certification-box img{
