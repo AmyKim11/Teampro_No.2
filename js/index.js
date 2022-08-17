@@ -5,12 +5,12 @@ $(document).ready(function(){
      let hidenave = $(".hide-nave");
       let submenu = $(".hide-nav-texts");
       if(hidenave.css("display") == "none"){
-        hidenave.slideDown();
-        submenu.slideDown();
+        hidenave.fadeIn(900);
+        submenu.fadeIn(900);
       }
       else{
-        hidenave.slideUp();
-        submenu.slideUp();
+        hidenave.fadeOut(900);
+        submenu.fadeOut(900);
       }
    });
 });

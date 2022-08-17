@@ -5,6 +5,7 @@
    padding: 0;
    text-decoration: none;
    list-style: none;
+   cursor: default;
 }
 
 body{
@@ -74,10 +75,19 @@ header{
    font-weight: bold;
    width: 74px;
    height: 29px;
-   cursor: pointer;
    text-transform:uppercase; 
 }
 
+
+/* .nav-text a:first-child li{
+   cursor: pointer;
+} */ /*<- 사업소개, 정보마당, 마지막 서브 페이지에선 주석 지워야 함*/
+.nav-text a:nth-child(2) li{
+   cursor: pointer;
+} /*<- 회사소개, 정보마당, 마지막 서브 페이지에선 주석 지워야 함*/
+.nav-text a:last-child li{
+   cursor: pointer;
+} /*<- 회사소개, 사업소개, 정보마당 페이지에선 주석 지워야 함*/
 
 .nav-text li:hover{
    color: #184B9F;
