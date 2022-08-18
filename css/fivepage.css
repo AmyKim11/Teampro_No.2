@@ -426,7 +426,10 @@ header{
 
 .pre-left-button{
    display: flex;
-  
+}
+
+.pre-left-button .madang-lee{
+   font-weight: 500;
 }
 
 .pre-left-button:hover > .madang-lee{
@@ -445,6 +448,10 @@ header{
 
 .next-right-button{
    display: flex;
+}
+
+.next-right-button .madang-da{
+   font-weight: 500;
 }
 
 .next-right-button:hover > .madang-da{
