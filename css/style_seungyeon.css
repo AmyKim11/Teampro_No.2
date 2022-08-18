@@ -5,6 +5,8 @@
     font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    cursor: default;
     
 
 }
@@ -80,9 +82,19 @@ header {
    font-weight: bold;
    width: 74px;
    height: 29px;
-   cursor: pointer;
+   
    text-transform: uppercase;
 }
+
+ .nav-text a:first-child li{
+   cursor: pointer;
+}  /*<- 사업소개, 정보마당, 마지막 서브 페이지에선 주석 지워야 함*/
+/*.nav-text a:nth-child(2) li{
+   cursor: pointer;
+} <- 회사소개, 정보마당, 마지막 서브 페이지에선 주석 지워야 함*/
+.nav-text a:last-child li{
+   cursor: pointer;
+} /*<- 회사소개, 사업소개, 정보마당 페이지에선 주석 지워야 함*/
 
 
 .nav-text li:hover {
@@ -112,7 +124,6 @@ header {
 .nav-text a:last-of-type li:hover:after {
    transform: scaleX(1);
 }
-
 
 
 .nav-text .underline {
@@ -322,7 +333,6 @@ header {
     
     background-image: url(../img/square64.png) ;
     background-position:center;
-    opacity: 0.8;
     position: relative;
 }
 .state-text{
@@ -650,28 +660,27 @@ a{
 /*ETC 소개*/
 
 
-#ETC{margin-bottom:100px;
-   
-   
-}
+#ETC{ margin-bottom:100px;
+      width:auto;
+      height:auto;
+      overflow:hidden;
+   }
+
 
 .ETC2{
     max-width:1441px;
     margin:100px auto 0;
-    
-    
    }
 
 .ETC-text{
-   
     /* Layout Properties */
     top: 480px;
     left: 240px;
     width: 89px;
-height: 84px;
+   height: 84px;
     /* UI Properties */
     opacity: 1;
-margin-bottom:40px;}
+   margin-bottom:40px;}
 
     .ETC-head{
         width: 75px;
@@ -699,8 +708,7 @@ opacity: 1;
 }
 
 @media screen and (max-width:1280px){
-   .ETC-text{
-      margin:auto;
+   .ETC-text{margin:auto;
       margin-bottom: 50px;
    }}
 
