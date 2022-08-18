@@ -7,7 +7,7 @@ const pause_button = $('.pauseplay_img');
 $(document).ready(function(){
     slider.slick({
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         arrows: true,
         prevArrow: $('.preview_button'),
         nextArrow: $('.next_button')
