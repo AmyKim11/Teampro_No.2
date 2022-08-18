@@ -263,9 +263,18 @@ header {
    margin: 0 auto;
 }
 
-.pauseplay_button {
-   width: 50px;
+.slider_button_inner{
+   width: 175px;
+   display: flex;
+   justify-content: space-between;
 }
+
+.slider_button button{
+   background-color: rgba(0,0,0,0);
+   border: none;
+}
+
+
 
 /* -----------------resoft news 부분-------------------- */
 .news_wrap {
