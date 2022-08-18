@@ -5,6 +5,8 @@
    padding: 0;
    text-decoration: none;
    list-style: none;
+   cursor: default;
+   scroll-behavior: smooth;
 }
 
 body{
@@ -74,13 +76,23 @@ header{
    font-weight: bold;
    width: 74px;
    height: 29px;
-   cursor: pointer;
    text-transform:uppercase; 
 }
+
+.nav-text a:first-child li{
+   cursor: pointer;
+}  /*<- 사업소개, 정보마당, 마지막 서브 페이지에선 주석 지워야 함*/
+.nav-text a:nth-child(2) li{
+   cursor: pointer;
+} /*<- 회사소개, 정보마당, 마지막 서브 페이지에선 주석 지워야 함*/
+/*.nav-text a:last-child li{
+   cursor: pointer;
+} /*<- 회사소개, 사업소개, 정보마당 페이지에선 주석 지워야 함*/
 
 
 .nav-text li:hover{
    color: #184B9F;
+   
 }
 .nav-text a:first-of-type li:after, /*<- 두번째, 세번째, 네번째 서브 해당되는 사람이면 살려야함*/
 .nav-text a:nth-of-type(2) li:after/*<- 첫번째, 세번째, 마지막 서브해당되는 사람이면 살려야 함*/
@@ -227,7 +239,8 @@ header{
    z-index: 80;
    top:80px;
 }
-.head-wrap-img{ 
+.head-wrap-img{
+   
     background: rgba(0, 0, 0, 0.3) url("../img/headwarp.png");
     width: 100%;
     height: 300px;
@@ -417,7 +430,7 @@ header{
     /* left: 200px; */
     }
 
-.a{
+.mb{
       position: relative;
       top: 100px;
       left: 50%;
@@ -435,7 +448,7 @@ header{
       font-family: 'Noto Sans KR', sans-serif;
    }
 
-.a:hover{
+.mb:hover{
    color: white;
    background-color: #184B9F;
 
@@ -508,20 +521,25 @@ footer{
 @media screen and (min-width:769px) and (max-width:1280px) {
    /* nav 부분 */
    .header-con-wrap{
-      max-width: 1280px;
+      max-width: 1024px;
    }
 
-   .hamburger-menu{
+   /* .hamburger-menu{
       right: 20px;
-   }
+   } */
   
+   /* footer */
+   footer{
+      top: 500px;
+   }
+
 }
 
 /* 반응형 - 해상도 940px 이하 */
 @media (max-width:940px) {
-    /* nav  */
-    .header-con-wrap {
-      max-width: 1280px;
+   /* nav  */
+   .header-con-wrap{
+      max-width: 1024px;
    }
    .header-con-wrap nav{
       display: none;
@@ -567,56 +585,6 @@ footer{
 
    .hide-nav-texts{
       height: 220px;
-   }
-
-   .hamburger-menu{
-      right: 20px;
-   }
-}
-
-@media screen and (min-width:769px) and (max-width:1280px) {
-  
-   /* footer */
-   footer{
-      top: 200px; /*<-임의로 수정하셔도 됩니다*/
-   }
-   .footer-con-wrap{
-      width: 94%;
-   }
-
-}
-
-/* 반응형 - 해상도 940px 이하 */
-@media (max-width:940px)  {
-
-   /* footer */
-   footer{
-      top: 200px;  /*<-임의로 수정하셔도 됩니다*/
-      height: 331px;
-   }
-
-   .footer-con-wrap{
-      width: 94%;
-   }
-
-   .footer-text-wrap{
-      flex-direction: column;
-   }
-
-   .footer-left-con{
-      margin-bottom: 30px;
-   }
-}
-
-/* 해상도 767이하 */
-@media (max-width:768px) {
-   /* ci logo 부분 */
-   .ci-logo{
-      padding-left: 10%;
-   }
-   /* footer */
-   .footer-con-wrap{
-      width: 94%;
    }
 
 }

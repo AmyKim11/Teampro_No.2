@@ -273,22 +273,48 @@
       </div>
       </div>
       <div class="more-btn">
-         <p><button class="a">더보기</button></p>
+         <p><button class="mb">더보기</button></p>
       </div>
       </div>
 
    </content>
+   <!--
    <script>
       $(document).ready(function () {
-         $('button.a').click(function () {
+         $('button.mb').click(function () {
             $('.b').slideDown();
          });
       });
    </script>
+   <script>
+      function toggleBtn1() {
+  
+  // 토글 할 버튼 선택 (btn1)
+  const mb = document.getElementById('mb');
+  
+  // btn1 숨기기 (display: none)
+  if(mb.style.display !== 'none') {
+    mb.style.display = 'none';
+  }
+  // btn` 보이기 (display: block)
+  else {
+    btn1.style.display = 'block';
+  }
+  
+}
+   </script>
+ -->
+ <script>
+   $(document).ready(function(){
+       $('.mb').click(function(){
+           $('.mb').slideUp('fast', function(){
+               $('.b').slideDown('slow').removeClass('hidden');
+           }).addClass('hidden');
+       });
+   })(jQuery);
+   </script>
 
-
-
-   <!-- footer 부분 -->
+ <!-- footer 부분 -->
    <footer>
       <div class="footer-con-wrap">
          <div class="footer-ci">
