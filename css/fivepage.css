@@ -295,9 +295,10 @@ header{
    text-align: center;
    line-height: 300px;
    font-size: 40px;
+   margin-top: 80px;
 }
+ 
  /* fivepage 서브 콘텐츠 article  */
-
 .all-madang{
    position: relative;
    max-width: 1440px;
