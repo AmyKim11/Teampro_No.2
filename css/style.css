@@ -66,13 +66,13 @@ header {
    margin-right: 0;
 }
  
-.header-con-wrap ul{
+/* .header-con-wrap ul{
    margin-bottom: 0;
    padding: 0;
-}
+} */
 
 .nav-text {
-   line-height: 38px;
+   /* line-height: 38px; */
    display: flex;
    justify-content: space-between;
    width: 400px;
@@ -87,6 +87,7 @@ header {
    opacity: 1;
    font-size: 20px;
    font-weight: bold;
+   width: 74px;
    height: 29px;
    cursor: pointer;
    text-transform: uppercase;
