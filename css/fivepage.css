@@ -6,6 +6,7 @@
    text-decoration: none;
    list-style: none;
    cursor: default;
+   scroll-behavior: smooth;
 }
 
 body{
