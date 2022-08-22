@@ -46,11 +46,13 @@ header {
    width: fit-content;
    /* position: absolute; */
    padding: 25px 0 0 120px;
+   
 }
 
 .ci-logo img {
    width: 133px;
    height: 30px;
+   cursor: pointer;
    /* filter:invert(100%) sepia(100%) saturate(2%) hue-rotate(190deg) brightness(102%) contrast(101%); */
 }
 
