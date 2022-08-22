@@ -407,7 +407,7 @@ header {
    max-width: 1440px;
    margin: 0 auto;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
 }
 
 /* ------------프로젝트 글 부분------------- */
@@ -444,7 +444,8 @@ header {
 
 /* ---------------프로젝트 사진 두개 부분------------------ */
 .pro-con-right {
-   width: 70%;
+   width: 100%;
+   max-width: 534px;
    margin-top: 211px;
 }
 
@@ -472,7 +473,7 @@ header {
    border-radius: 10px;
    position: relative;
    width: 100%;
-   max-width: 475px;
+   max-width: 534px;
    height: 355px;
 }
 
@@ -482,7 +483,7 @@ header {
    color: #FFFFFF;
    font-size: 17px;
    z-index: 2;
-   padding: 260px 0 0 21px;
+   padding: 250px 0 0 21px;
    top: 0;
    right: 0;
    bottom: 0;
@@ -508,7 +509,7 @@ header {
 .moado-back-img {
    border-radius: 10px;
    width: 100%;
-   max-width: 475px;
+   max-width: 534px;
    height: 355px;
    background: transparent url('../img/project/moaDo-pic.png') 0% 0% no-repeat padding-box;
 }
@@ -521,13 +522,13 @@ header {
    border-radius: 10px;
    margin-top: 50px;
    width: 100%;
-   max-width: 475px;
+   max-width: 534px;
    height: 355px;
    background: url('../img/project/gradient-moado.svg') no-repeat center;
 }
 
 .pro-moado-wrap figcaption {
-   padding-top: 285px;
+   padding-top: 275px;
 }
 
 /* ----------서비스 부분---------- */
@@ -544,12 +545,13 @@ header {
    max-width: 1440px;
    margin: 0 auto;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
 }
 
 /* -----------서비스 내용 부분(왼쪽)---------------- */
 .ser-con-left {
-   width: 70%;
+   width: 100%;
+   max-width: 534px;
    padding-top: 100px;
    margin-right: 80px;
 }
@@ -576,7 +578,8 @@ header {
 /* -----------서비스 내용 부분(오른쪽)---------------- */
 .ser-con-right {
    position: relative;
-   width: 80%;
+   width: 100%;
+   max-width: 680px;
    padding-top: 100px;
 }
 
@@ -591,6 +594,7 @@ header {
 
 .ser-app-web-wrap {
    width: 100%;
+   max-width: 680px;
    display: flex;
    justify-content: space-between;
 }
@@ -964,7 +968,7 @@ footer {
    /* 프로젝트 부분 */
    .project-wrap {
       width: 100%;
-      height: 1911px;
+      height: 2011px;
       margin-top: 400px;
    }
    .project-con-wrap {
@@ -972,33 +976,40 @@ footer {
       flex-direction: column-reverse;
    }
    .pro-con-right {
-      margin: -2px 20% 0 15%;
+      /* margin: -2px 20% 0 15%; */
+      margin: -2px auto;
    }
    .project-text {
       text-align: center;
    }
-   .ani-player {
+   /* .ani-player {
       padding: 0 10%;
+   } */
+
+   .pro-ecoce-wrap{
+      margin-top: 63px;
    }
    .ecoce-back-img,
    .moado-back-img {
       width: 100%;
+      max-width: 534px;
    }
-   .motion-pic-1{
+   /* .motion-pic-1{
       padding: 0 0 0 11%;
-   }
+   } */
 
    /* 서비스 파트 */
    .service-wrap {
       width: 100%;
-      height: 2200px;
+      height: 2100px;
       background: #F2F6FC;
-      top: 3861px;
+      top: 3961px;
    }
 
    .service-con-wrap {
       max-width: fit-content;
       flex-direction: column;
+      max-width: 640px;
    }
 
    .service-text {
@@ -1009,7 +1020,14 @@ footer {
    .ser-con-right {
       width: 100%;
    }
-   
+   .ser-con-left{
+      margin-right: 0;
+      max-width: 640px;
+   }
+
+   .ser-con-right{
+      padding-top: 10px;
+   }
 
    /* footer */
    footer {
@@ -1090,7 +1108,7 @@ footer {
    .project-wrap {
       margin-top: 400px;
       width: 100%;
-      height: 1911px;
+      height: 2011px;
    }
 
    .project-con-wrap {
@@ -1099,23 +1117,28 @@ footer {
    }
 
    .pro-con-right {
-      max-width: 475px;
-      margin: -2px 20% 0 15%;
+      max-width: 534px;
+      /* margin: -2px 20% 0 15%; */
+      margin: -2px auto;
    }
 
    .project-text {
       text-align: right;
    }
 
-   .ani-player {
+   /* .ani-player {
       padding: 0 10%;
-   }
+   } */
 
-   .pro-con-left{
+   /* .pro-con-left{
       padding-right: 10%;
-   }
-   .motion-pic-1{
+   } */
+   /* .motion-pic-1{
       padding: 0 0 0 11%;
+   } */
+
+   .pro-ecoce-wrap{
+      margin-top: 63px;
    }
 
    .ecoce-back-img,
@@ -1125,14 +1148,13 @@ footer {
 /* service 부분 */
 .service-wrap {
    width: 100%;
-   top: 3860px;
+   top: 3959px;
    background: #F2F6FC;
-   height: 2200px;
+   height: 2090px;
 }
 
 .service-con-wrap {
-   padding: 0 10%;
-   max-width: fit-content;
+   max-width: 648px;
    flex-direction: column;
 }
 .service-text {
@@ -1144,7 +1166,14 @@ footer {
 .ser-con-right {
    width: 100%;
 }
-   
+.ser-con-left{
+   margin-right: 0;
+   max-width: 640px;
+}
+
+.ser-con-right{
+   padding-top: 20px;
+}
   
    /* footer 부분 */
    footer {
