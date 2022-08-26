@@ -508,12 +508,9 @@ header{
    .all-madang{
       display: block;
       margin: 0;
-      /* justify-content: center;  */
    }
    .article-news{
      width: fit-content;
-     display: flex;
-     flex-direction: column;
      margin: 3% auto;
    }
    .info-main-text{
