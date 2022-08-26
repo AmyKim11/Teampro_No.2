@@ -46,4 +46,4 @@
    - 다르게 한 부분: 
       * 제 페이지 관련 반응형이 따로 없어서, width가 1280px이하일 때 컨텐츠들이 다 세로로 보기 좋게 정렬하기 위해, 간단한 미디어쿼리를 줬습니다.
    
-      <img src="./img/infomadang/1280px.png" alt="반응형 1280px" width= "500" height= "500">
+         <img src="./img/infomadang/1280px.png" alt="반응형 1280px" width= "500" height= "500">
