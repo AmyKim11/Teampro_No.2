@@ -12,6 +12,7 @@
 
   * project, service 부분
       * 왼쪽 오른쪽 부분 콘텐츠 나눠서 fadeInLeft, fadeInRight 애니메이션 추가.  
+      ![scroll_ani](./img/reportimg/scroll_ani.gif)
 
    * service 부분
       * 해상도가 줄어들때 안의 박스들도 같이 줄어들게 width 값 조절함.  
