@@ -41,7 +41,7 @@
       ![scroll_ani](./img/company-introduce/organization.gif)
 
    * 특허&인증 부분
-      *.certification-box img:nth-child(3n) { display: none;} 을 주어 화면 크기에 맞춰서 사라지도록 구현 
+      * .certification-box img:nth-child(3n) { display: none;} 을 주어 화면 크기에 맞춰서 사라지도록 구현 
       
       ![scroll_ani](./img/company-introduce/certification.gif)
 
