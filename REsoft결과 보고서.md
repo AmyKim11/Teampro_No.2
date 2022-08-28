@@ -29,6 +29,22 @@
    
    - 다르게 한 부분: 특허,인증 부분 1280px 보다 클때 사각형을 2줄로 변경함
 
+   * 연혁 부분
+      border-left: 6px solid #C8C8C8; 를 통해 옆 테두리 구현 
+      제일 아래 부분은 position: absolute; top: 920px; 을 주어 항상 테두리 아래에 붙어있게 구현
+      ![scroll_ani](./img/company-introduce/history.gif)
+
+   * 조직도 부분
+      wowjs를 사용한 fadein 애니메이션
+      ![scroll_ani](./img/company-introduce/organization.gif)
+
+   * 특허&인증 부분
+      .certification-box img:nth-child(3n) { display: none;} 을 주어 화면 크기에 맞춰서 사라지도록 구현 
+      ![scroll_ani](./img/company-introduce/certification.gif)
+
+   
+
+
 ### 4. 이름 : 오성식
    - 맡은 부분 : main page(slider, resoft news, reference)
    
